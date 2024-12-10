@@ -1,0 +1,64 @@
+* {
+	background: black;
+	color: limegreen;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    text-align: center;
+}
+
+#tituloprincipal {
+    font-size: 30px;
+}
+
+.iniciarsesión {
+    width: 1220px;
+    margin: 5px;
+}
+
+.iniciarsesion ul {
+    list-style: none;
+}
+
+.iniciarsesion li {
+    display: inline-block;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: green;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border: solid 2px #525151;
+}
+
+.menu li a:hover {
+    background-color: #525151;
+    transition: all .4s;
+}

@@ -1,0 +1,27 @@
+* {
+    background: black;
+	color: limegreen;   
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+td {font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+p {font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+ul {font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+li {font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+p.small {font-family: Arial, Helvetica, sans-serif; font-size: 10px}
+h4 {font-family: Arial, Helvetica, sans-serif; font-size: 14px}
+h3 {font-family: Arial, Helvetica, sans-serif; font-size: 16px}
+.white {color: #FFFFFF}
+.yellow {color: #ffff66}
+.purple {color: #333399}
+a:hover {color: #999999}
+footer {
+    text-align: center;
+}

@@ -1,0 +1,2581 @@
+<html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+	<title>Como Crear un Mundo</title>
+  <link rel="icon" type="icon" href="images/image.ico">
+  <link rel="stylesheet" href="worlds_style.css">
+</head>
+
+
+<header>
+  <h1> Crear un Mundo en Worlds.com </h1>
+  <h3>Material puro sacado del manual original de Worlds. Para traducirlo al Español, Click derecho ---> Traducir a español</h3>
+  <hr>
+</header>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="95%">
+<tr><td colspan="2"><h2>WorldsShaper Procedures</h2></td></tr>
+<TR><TD VALIGN="top">
+  <P CLASS="two"><BR><B>1. Getting Started</B> </P>
+  <UL>
+    <LI><A 
+    href="#CreatingaNewWorld">Creating 
+    a New World</A> 
+    <LI><A 
+    href="#NamingaWorld">Naming 
+    a World</A> 
+	<LI><A 
+    href="#SavingaWorldFile">Saving 
+    a World File </A>
+
+
+</LI></UL>
+	
+  <P CLASS="two"><BR><B>2. Objects</B> </P>
+  <UL>
+    <LI><A 
+    href="#NaminganObject">Naming 
+    an Object </A>
+    <LI><A 
+    href="#DeletinganObject">Deleting 
+    an Object </A>
+    <LI><A 
+    href="#AddingaWallFloororCeiling">Adding 
+    a Wall, Floor, or Ceiling </A>
+    <LI><A 
+    href="#AddingaShape">Adding 
+    a Shape </A>
+    <LI><A 
+    href="#MovingObjects">Moving 
+    Objects </A>
+    <LI><A 
+    href="#ScalinganObject">Scaling 
+    an Object </A>
+    <LI><A 
+    href="#CuttingandPastingObjects">Cutting 
+    and Pasting Objects </A>
+    <LI><A 
+    href="#CopyingObjects">Copying 
+    Objects </A>
+	    <LI><A 
+    href="#GroupingObjects">Grouping Objects (WObjects)</A>
+    <LI><A 
+    href="#InfiniteBackgrounds">Infinite 
+    Backgrounds</A> </LI>
+	
+	</UL>
+	
+  <P CLASS="two"><BR><B>3. Textures, Text and Colors</B> </P>
+  <UL>
+    <LI><A 
+    href="#ApplyingTexturestoanObject">Applying 
+    Textures to an Object </A>
+    <LI><A 
+    href="#ChangingtheTileSize">Changing 
+    the Tile Size </A>
+    <LI><A 
+    href="#ChangingtheColorofanObject">Changing 
+    the Color of an Object </A>
+    <LI><A 
+    href="#AddingTexttoaWall">Adding 
+    Text to a Wall </A></LI>
+	
+	</UL>
+  
+
+	</TD>
+    <TD VALIGN="TOP">
+  <P CLASS="two"><BR><B>4. New Rooms and Connecting Rooms</B> </P>
+  <UL>
+    <LI><A 
+    href="#CreatingaNewRoom">Creating 
+    a New Room </A>
+    <LI><A 
+    href="#CreatingPortals">Creating 
+    Portals </A>
+    <LI><A 
+    href="#ConnectingPortals">Connecting 
+    Portals </A>
+    <LI><A 
+    href="#ConnectingWorlds">Connecting Worlds</A> </LI></UL>
+	
+	  <P CLASS="two"><BR><B>5. Libraries</B> </P>
+  <UL>
+    <LI><A 
+    href="#AddinganItemfromaLibrary">Adding 
+    an Item  from a Library </A>
+<UL>    <LI><A 
+    href="#AddinganObject">Adding 
+    an Object</A>
+<ul>	<LI><A 
+    href="#ObjectsCatalog">Objects Catalog</A></ul>
+	 <LI><A 
+    href="#AddinganAction">Adding 
+    an Action</A>
+	<ul><LI><A 
+    href="#ActionsCatalog">Actions Catalog</A></ul>
+		 <LI><A 
+    href="#AddingaBehavior">Adding 
+    a Behavior</A> (including Sensors)
+<ul>			   <LI><A 
+    href="#BehaviorsCatalog">Behaviors Catalog</A></ul>
+		<LI><A 
+    href="#AddingaTexture">Textures</A>
+		  <LI><A 
+    href="#AttributesCatalog">Attributes</A>
+	</UL>
+
+  </UL>
+   <P CLASS="two"><BR><B>6. Miscellaneous</B> </P>
+   <UL>
+<li><a href="#Mirrors">Creating Mirrors</a>
+<li><a href="#CreatingWearWall">Creating a Wear Wall</a>
+	<LI><A 
+    href="#MultiUser">Making Your World Multiuser</A>
+<li><a href="#distribution">How to Register Your World</a>
+
+</UL>
+
+	</TD></TR></TABLE>
+<P><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=CreatingaNewWorld></A>Creating a New World </H2>
+<P CLASS="two">To create a new world, follow these steps:</P>
+<OL CLASS="two">
+  <LI>From the File menu, choose New to open a new world. 
+  <LI>A new world opens with a  limited view of the yellow and red walls, 
+  plus a portion of the green floor and blue ceiling. Click Drive to move around 
+  in the room.
+  <LI>The world is called World1 until you save it with another name.  Any subsequent new worlds you open will be numbered consecutively (World2, World3, etc).
+  </LI></OL>
+  </TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=NamingaWorld></A>Naming a World </H2>
+<P CLASS="two">World names must be unique to be correctly identified by the Server. To name 
+a world, follow these steps:</P>
+<OL CLASS="two">
+  <LI>Scroll up the Hierarchy Tree to the very top.  The default world name is listed there (e.g. World1)<BR>IMPORTANT NOTE: If you change worlds while your working, the Hierarchy Tree does not automatically change to the current world you're in.  You must right-click anywhere in the world and then click Edit Properties to make sure the Hierarchy Tree updates.
+  <LI>Click on the world name at the top of the Hierarchy Tree to bring up the <B>World Properties</B> in the Properties Box.
+  <LI>Double-click the <B>Name</B> property. 
+  <LI>In the Edit Name box, enter a unique name to identify the world. You can 
+  use the same name here as for the .WORLD file you'll save, but this isn't 
+  required. 
+  <LI>Click OK.
+  <LI>Save your world.
+   </OL>
+   </TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=SavingaWorldFile></A>Saving a World File </H2>
+<P CLASS="two"><B>NOTE:</B> Before saving a world file to disk, you should name the world in 
+its World Properties as detailed in the first section of this document. You will be prompted 
+to save a world before quitting WorldsShaper, with a separate prompt for each world you've made changes in. <I>As with all programs, save early and save 
+often.</I></P>
+<P CLASS="two">To save a World file, follow these steps:</P>
+<OL CLASS="two">
+  <LI>From the File menu, choose Save. The Save World box opens. 
+  <LI>World files should be saved in a project subdirectory within the InternalWorldsPlayer
+  directory. 
+  <LI>Enter a filename with the extension .WORLD. 
+  <LI>World names must be unique to be correctly identified by the Server. 
+  <LI>Click Save. </LI></OL>
+  </TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=NaminganObject></A>Naming an Object </H2>
+<P CLASS="two">To name an object, follow these steps:</P>
+<OL CLASS="two">
+  <LI>Right-click an object in the 3D window to select it. The object's 
+  Properties list appears in the Properties Box. 
+  <LI>Double-click the <B>Name</B> property. The Edit Name box opens. 
+  <LI>Enter a descriptive name to identify the object. 
+  <LI>Click OK. </LI></OL>
+<P CLASS="two">The name you have entered appears in the object's Name property and will also appear in the Hierarchy Tree.</I></P>
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=DeletinganObject></A>Deleting an Object </H2>
+<P CLASS="two">To delete an object, follow these steps:</P>
+<OL CLASS="two">
+  <LI>Right-click an object in the 3D window to select it. The object's 
+  Properties list appears in the Properties Box.  Make sure that the object is selected in the Hierarchy Tree (it should have a yellow rectangle around it. If it doesn't, click on the object's name in the Hierarchy Tree).  Alternatively, if you want to delete an object like 
+  an Action that can't be selected by right-clicking, navigate the Hierarchy Tree and select the object you want to delete. 
+  <LI>Click Delete (the Delete button is to the right of the Properties Box. </LI></OL>
+  </TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=AddingaWallFloororCeiling></A>Adding a Wall, Floor, or Ceiling </H2>
+<P CLASS="two">To add a wall, floor, or ceiling, follow these steps:</P>
+<OL CLASS="two">
+  <LI>Move up or down the Hierarchy Tree to reach the <B>Contents</B> list of the <B>Room 
+  Environment</B> properties. 
+  <LI>Click on the Objects tab in the Libraries section.
+  <LI>Click on the object in the library you wish to add and drag it to the Room Environment Contents in the Hierarchy Tree. A new object will be listed under the Room Environment Contents.</LI></OL>
+  </TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=AddingaShape></A>Adding a Shape </H2>
+<P CLASS="two">You can import shapes built in a 3D modeling program into WorldsShaper. The shape 
+must first be converted to the appropriate .RWX or .RWG file format. </P>
+
+<P CLASS="two">IMPORTANT NOTE:  The filenames of objects you import will become case sensitive when uploaded to a server.  To keep things simple, make all object and texture filenames lowercase.</P>
+
+<P CLASS="two">To add a shape, follow these steps:</P>
+<OL CLASS="two">
+  <LI>Move up or down the Hierarchy Tree to reach the <B>Contents</B> list of the <B>Room</B> properties. 
+  <LI>Click on the Objects tab in the Libraries section.
+  <LI>Click on <B>Shape (empty)</B> in the library and drag and drop it into the Room Contents in the Hierarchy Tree. A new shape will be listed under the Room Contents, and a semi-transparent cube will appear in your room at 0,0,0.
+  <LI>Click the new Shape item in the list. The Shape Properties appear in the Properties Box. 
+  <LI>Double-click the File property listed under Shape Properties. 
+  <LI>Enter the appropriate relative path and filenname (e.g. tex/table.rwg) and click OK. The filename is added to the File property 
+  in the Shape Properties list, and the cube changes into your object. Depending on the method used to convert the file, it may be too small (or too big) to see.  
+
+<H3>Scaling and Moving a Shape </H3>
+<P CLASS="three">To scale and move your object, follow these steps:</P>
+<OL CLASS="three">
+  <LI>In the Shape Properties list, double-click Transform. The Edit Transform 
+  box opens. 
+  <LI>Type a number in the <B>[N]:</B> field and click <B>Scale by [N]</B> (N=2 will double the objects size each time the Scale by [N] button is clicked). The 3D shape should now be visible in the room at 0,0,0. You can use the 
+Transform box again, or the Scale and Move buttons above the Properties Box, to scale further or 
+move the shape to a new location.</LI>
+</OL>
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=MovingObjects></A>Moving Objects </H2>
+<P CLASS="two">WorldsShaper offers three different methods for moving objects in 3D space, 
+each with different advantages: </P>
+<UL>
+  <LI>Use the Move buttons above the Properties Box for speed and intuitive visual movement. 
+  <LI>In the Rect Properties, edit the <B>From</B> and <B>To</B> properties to move a wall, floor, or ceiling with 
+  precision if you know the exact final location. These properties do not apply 
+  to 3D shapes. 
+  <LI>Edit the <B>Transform</B> property to move any type of object incrementally and 
+  precisely. </LI></UL>
+<P CLASS="two">To move objects to a different level of the Hierarchy Tree, or a different room, 
+use the <A 
+href="#CuttingandPastingObjects">cut 
+and paste commands</A>. </P>
+
+<p CLASS="two">There is also a <b>Snap Tool</b> which will allow you to set a snap increment for objects.  This feature will place objects such that their origins are at
+some multiple of that increment.  For example, if you set an increment of 50 for x and y, you could place objects at (150, 250) but not at (229, 510).   The tool will
+snap the object to the nearest point that matches the criteria. To activate or change the snap increments, go to the Edit Menu, Snap Tool Settings.
+
+</p>
+<H3>Using the Move Buttons</H3>
+<OL CLASS="three">
+  <LI>Right-click an object in the 3D window to select it. 
+  <LI>Click one of the buttons above the Properties Box: hold the mouse button down and drag. 
+  As you drag, the selected object moves in the 3D window. </LI></OL>
+<TABLE border=0>
+  <TR>
+    <TD width=61><IMG SRC="images/horizontalmove.gif" WIDTH=27 HEIGHT=28 BORDER=0 ALT=""> </TD>
+    <TD width=330>The <B>Move Horizontal</B> button equates mouse movement with 
+      x=left/right and y=forward/back. </TD></TR>
+  <TR>
+    <TD width=61><IMG SRC="images/verticalmove.gif" WIDTH=27 HEIGHT=28 BORDER=0 ALT=""></TD>
+    <TD width=330>The <B>Move Vertical</B> button equates mouse 
+      movement with x=left/right and z=forward/back. </TD></TR>
+  <TR>
+    <TD width=61><IMG SRC="images/pitchbutton.gif" WIDTH=27 HEIGHT=28 BORDER=0 ALT=""></TD>
+    <TD width=330>The <B>Pitch</B> button equates mouse movement with 
+      pitch=left/right and ignores forward/back input. Pitch revolves the object around the x axis.</TD></TR>
+  <TR>
+    <TD width=61><IMG SRC="images/rollbutton.gif" WIDTH=27 HEIGHT=28 BORDER=0 ALT=""></TD>
+    <TD width=330>The <B>Roll</B> button equates mouse movement with roll=left/right 
+      and ignores forward/back input. Roll revolves the object around the y axis.</TD></TR>
+  <TR>
+    <TD width=61><IMG SRC="images/yawbutton.gif" WIDTH=27 HEIGHT=28 BORDER=0 ALT=""></TD>
+    <TD width=330>The <B>Yaw</B> button equates mouse movement with yaw=left/right 
+      and ignores forward/back input. Yaw revolves the object around the z axis.</TD></TR>
+  <TR>
+    <TD width=61><IMG SRC="images/scalebutton.gif" WIDTH=27 HEIGHT=28 BORDER=0 ALT=""></TD>
+    <TD width=330>The<B> Scale</B> button takes any mouse movement from the initial 
+      point and sizes the object smaller on left or back, larger on right or 
+      forward. </TD></TR></TBODY></TABLE>
+<H3><A name=EditingtheFromandToProperties></A>Editing the From and To Properties 
+</H3>
+<P CLASS="three">This method is most useful when you need to fit an object into a specific 
+position. The <B>From</B> property identifies the x,y,z coordinates of the bottom left 
+corner of an object. The <B>To</B> property identifies the coordinates of its top right 
+corner. Changing the positions moves an object. </P>
+<P CLASS="three">(If you also change the relationship between the positions, the object will 
+be resized as well as moved. Check the <B>Extent</B> property to see whether the width 
+or height has changed as a result of changes to the From and To properties. 
+Click the Undo button above the Properties Box if you have changed the object in ways you did 
+not intend.)</P>
+<P CLASS="three">To edit the From and To properties, follow these steps:</P>
+<OL class="three">
+  <LI>Right-click an object in the 3D window to select it and bring up the Rect Properties. 
+  <LI>In the Rect Properties list, double-click the <B>From</B> property. 
+  <LI>Enter new x,y,z coordinates in the Edit From box, and click OK. You can 
+  either place commas or single spaces between numbers for x, y and z. 
+  <LI>In the Rect Properties list, double-click the <B>To</B> property.
+  <LI>Enter new x,y,z coordinates in the Edit To box, and click OK. </LI></OL>
+<H3><A name=EditingtheTransformProperty></A>Editing the Transform Property </H3>
+<OL CLASS="three">
+  <LI>Right-click an object in the 3D window to select it and bring up the Rect Properties. 
+  <LI>Double-click the <B>Transform</B> property on the right side of the Properties 
+  box. The Edit Transform box opens. This offers a matrix of possible 
+  transformations that WorldsShaper applies to the object, using the coordinates or 
+  amounts that you specify in the [X,Y,Z] and [N] fields at the top of the box. 
+  <LI>Enter values for [N] and/or for [X,Y,Z]. The meaning of these values 
+  depends on the option you choose next. 
+  <LI>Click one of the following options: </LI></OL>
+<H4>Moving to an exact location or moving in increments</H4>
+<P CLASS="four">In the following cases, N is the distance in units to move the object. A 
+negative number is acceptable if you wish to move the object down the x, y, or z 
+axis. </P>
+<UL class="four">
+  <LI><B>Move x by [N] </B>moves the object N units along the x axis. 
+  <LI><B>Move y by [N] </B>moves the object N units along the y axis. 
+  <LI><B>Move z by [N] </B>moves the object N units along the z axis. 
+  <LI><B>Move by [X,Y,Z] </B>moves the object on all three axes simultaneously, 
+  with the values for x, y, and z representing distance in units to be moved 
+  from the object's current position. 
+  <LI><B>Move to [X,Y,Z] </B>moves the object on all three axes simultaneously, 
+  with the values for x, y, and z representing the destination coordinates. 
+</LI></UL>
+<H4>Pitch, roll and yaw: changing an object's orientation</H4>
+<P CLASS="four">In the following cases, N is the angle in degrees to revolve the object. A 
+negative number revolves in the opposite direction. </P>
+<UL class="four">
+  <LI><B>Pitch [N] </B>revolves the object N degrees around the x axis. 
+  <LI><B>Roll [N] </B>revolves the object N degrees around the y axis. 
+  <LI><B>Yaw [N] </B>revolves the object N degrees around the z axis. </LI></UL>
+<H4>Mixed rotations</H4>
+<P CLASS="four">In the following cases, N is the angle in degrees to revolve the object, and 
+x, y, and z indicate the axis of spin. For example, [0,0,1] spins on the 
+vertical z axis. A negative number for either value, such as [0,0,-1] (for x, y, 
+and z) or -1 (for N), revolves in the opposite direction. </P>
+<UL CLASS="four">
+  <LI><B>Spin by [X,Y,Z,N] </B>revolves the object N degrees beyond its current 
+  position around the specified axes. 
+  <LI><B>Spin to [X,Y,Z,N] </B>revolves the object N degrees beyond its original 
+  position around the specified axes. </LI></UL>
+<H4>Scaling to exact measurement</H4>
+<UL class="four">
+  <LI><B>Scale to [X,Y,Z]</B> scales the object to those exact measurements 
+  along each of the axes. </LI></UL>
+<P CLASS="four"><B>Scaling by a factor</B></P>
+<UL class="four">
+  <LI><B>Scale X by [N]</B> takes the existing X&nbsp;measurement and multiplies 
+  it by N. If N is greater than one, the object will stretch on the x axis away 
+  from the object's registration point (where the red dot shows up when the 
+  object is selected). If N is less than one, the object will contract towards 
+  ther registration point. 
+  <LI><B>Scale Y by [N]</B> takes the existing Y&nbsp;measurement and multiplies 
+  it by N. If N is greater than one, the object will stretch on the y axis away 
+  from the object's registration point (where the red dot shows up when the 
+  object is selected). If N is less than one, the object will contract towards 
+  the registration point. 
+  <LI><B>Scale Z by [N]</B> takes the existing Z&nbsp; measurement and 
+  multiplies it by N. If N is greater than one, the object will stretch on the z 
+  axis away from the object's registration point (where the red dot shows up 
+  when the object is selected). If N is less than one, the object will contract 
+  towards the registration point. 
+  <LI><B>Scale X, Y, Z by [N]</B> applies an N proportional scaling to all axes 
+  of the object at once, again with N values larger than one making the object 
+  larger, values less than one making the object smaller. </LI></UL>
+<P CLASS="four">When you're finished in the Edit Transform box, click OK. </P>
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=ScalinganObject></A>Scaling an Object </H2>
+<P CLASS="two">WorldsShaper offers three different methods for scaling objects, each with 
+different advantages: </P>
+<UL CLASS="two">
+  <LI>Use the Scale button above the Properties Box for speed and intuitive visual movement. 
+  <LI>Edit the <B>From</B>, <B>To</B>, or <B>Extent</B> properties to scale a wall, floor, or ceiling 
+  with precision if you know the exact final position or size. These properties 
+  do not apply to 3D shapes. 
+  <LI>Edit the <B>Transform</B> property to Scale any type of object incrementally 
+  and/or precisely. </LI></UL>
+  </TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=CuttingandPastingObjects></A>Cutting and Pasting Objects </H2>
+<P CLASS="two">Use the Cut and Paste commands to move objects from one room to another, or 
+to a different level of the hierarchy. For example, you can cut objects from the 
+Room Contents and paste them into the Room Environment Contents. To cut and 
+paste an object, follow these steps:</P>
+<OL CLASS="two">
+  <LI>Right-click an object in the 3D window to select it. Make sure that the object is selected in the Hierarchy Tree (has a yellow rectangle around it). If not, click on the object listed in the Hierarchy Tree to select it.
+  <LI>Click the Cut button above the Properties Box. 
+  The object disappears from the 3D window. 
+  <LI>Move up or down the Hierarchy Tree and select the <B>Contents</B> list where you want to 
+  insert the object. 
+  <LI>Click the Paste button above the Properties Box. </LI></OL>
+<P CLASS="two">The object is pasted at the same location in the 3D window, and appears at 
+the new location in the Hierarchy Tree.</P>
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=CopyingObjects></A>Copying Objects </H2>
+<P CLASS="two">To copy an object, follow these steps:</P>
+<OL CLASS="two">
+  <LI>Right-click an object in the 3D window to select it. Make sure that the object is selected in the Hierarchy Tree (has a yellow rectangle around it). If not, click on the object listed in the Hierarchy Tree to select it.
+  <LI>Click the Copy button above the Properties Box. 
+  <LI>Click the Paste button above the Properties Box. </LI></OL>
+<P CLASS="two">The copy is pasted on top of the original at the same location in the 3D 
+window. The copy is listed below the original in the Hierarchy Tree and is now selected. You can now move it to a new location using the Transform property or one of the Move buttons above the Properties Box. If you wanted the copy to be in a different position in the hierarchy, select the intended location in the Hierarchy Tree, then Paste there.</P>
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=GroupingObjects></A>Grouping Objects (WObjects)</H2>
+<P CLASS="two">To group objects together (make a WObject), follow these steps:</P>
+<OL CLASS="two">
+  <LI>In the Objects Library, you'll see <B>Grouper</B>.  Click on the Grouper and drag and drop it to the level of the Hierarchy Tree where you want your grouped objects to be (e.g. Room Contents, Room Environment Contents or Infinite Background Contents).  A WObject gets added to the Hierarchy list, and a red dot appears at 0,0,0 to mark the default position of the new WObject.
+  <LI>In the Hierarchy Tree, click on the triangle to the left of the new WObject to display its deeper properties. 
+  <LI>Now you can click and drag objects from the Objects Library to add them to the Contents of the WObject.
+  <LI>Once all of the objects have been added to the WObject, any scale and/or move operations performed on the WObject will affect all the grouped objects together.
+<LI><B>NOTE:</B> Currently the <B>Visible</B> property of a WObject does not work.  If you wanted the WObject invisible, you would have to set the Visible property of each individual object within the WObject.
+  </LI></OL>
+
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=InfiniteBackgrounds></A>Infinite Backgrounds</H2>
+<P CLASS="two"><B>To add objects to the Infinite Background:</B> </P>
+<OL CLASS="two">
+  <LI>In the Hierarchy Tree, one of the deeper properties of your Room is <B>Infinite Background</B>.  Scroll through the Hierarchy to locate your Room's Infinite Background.
+  <LI>From the Objects Library, drag and drop a <B>Grouper</B> to the Infinite Background listed in the Hierarchy. A new <B>WObject</B> is added to the contents of the Infinite Background.
+  <LI>Click the triangle to the left of the newly added WObject to reveal its deeper properties.
+  <LI>From the Objects Library, click and drag whatever objects you need (walls, floor, ceiling) to the Contents listed beneath the new WObject.
+<P CLASS="two">Use only as many objects as you need in the Infinite 
+Background for a particular room. For instance, if you have a room with only one 
+window opening to the east, you may need only one west-facing wall in the 
+Infinite Background to show a scene through that window. If you have a skylight, 
+perhaps a single ceiling will suffice for an Infinite Background. For an outdoor 
+scene, you may well need many walls and ceilings and perhaps even a floor. 
+Drawing Infiinte Backgrounds will slow down the rendering speed of a room at 
+least slightly.</P>
+  <LI>In the Hierarchy Tree, click on the WObject to bring up the WObject Properties in the Properties Box.
+<LI>Double-click 
+  <B>Transform</B> listed under WObject Properties. 
+  <LI>Enter the numbers <TT>-500,-500,-120 </TT>in the [X, Y, Z] field. 
+  <LI>Click the <B>Move by [X, Y, Z]</B> button, then click OK. <br><br>
+  These last three steps needed to be performed because the Infinite Background 
+is viewed from a Camera at 0,0,0. As a result, the Infinite Background floor and some walls would not be visible if you hadn't moved the WObject so that 0,0,0 became the center of the Infinite 
+Background room. 
+  <LI>Texture or size the walls as you desire. 
+  </OL>
+
+<P CLASS="two">
+One reason to group your Infinite Background objects within a WObject is so that you can easily take 
+this entire WObject, Copy it, and Paste it into any other rooms where you want an Infinite Background. You <I>can</I> build all of your walls individually in the Infinite Background's Contents, rather than 
+embedding them in a WObject, but then all of the walls will have to be moved individually.</P>
+
+  
+</TD></TR></TABLE>
+
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=ApplyingTexturestoanObject></A>Applying Textures to an Object </H2>
+<P CLASS="two">A texture must be saved in an appropriate file format ( .bmp, .gif) before you can apply it 
+to an object.  Also, place all your textures in a subdirectory within your project folder (e.g. C:\InternalWorldsPlayer\MyWorld\textures).  To apply a texture, follow these steps:</P>
+
+<P CLASS="two">IMPORTANT NOTE:  The filenames of textures you use will become case sensitive when uploaded to a server.  To keep things simple, make all object and texture filenames lowercase.</P>
+<OL CLASS="two">
+  <LI>Right-click the object in the 3D window to select it. The Rect Properties for the object appear in the Properties Box. 
+<LI>In the Hierarchy Tree, click on the triangle to the left of the selected rect to display the deeper properties like <B>Material</B>. 
+  <LI>Click the triangle to the left of  <B>Material</B>. The Material Properties list appears in the Properties Box. 
+  <LI>Click on <B>Texture</B> listed beneath Material. The MaterialTexture Properties list appears in the Properties Box. 
+  <LI>Double-click File. The Edit File box opens
+  <LI>Type in the relative texture path and a filename (e.g. textures/floor1.gif) and click OK. </LI></OL>
+<P CLASS="two">The texture appears on the object in the 3D window, scaled to fit the object 
+with a single image. You can change the tile size of the rect to repeat the image at a 
+different scale.</P>
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=ChangingtheTileSize></A>Changing the Tile Size </H2>
+<P CLASS="two">To change the tile size, follow these steps:</P>
+<P CLASS="two"><B>NOTE: </B>Tile Size is a property of the wall itself, rather than one of 
+the material properties of the wall.</P>
+<OL CLASS="two">
+  <LI>Right-click the textured rect in the 3D window to select it and bring up the Rect Properties in the Properties Box. 
+  <LI>Double-click <B>Tile Size</B> listed under Rect Properties. The Edit 
+  Tile Size box opens. 
+  <LI>Type in the desired width in units of a single tile, followed by the 
+  height in units. You can use 0 for either the x or y to indicate that you want 
+  the selected texture to stretch the full width or height of the object, or 0,0 
+  to stretch the texture to fit on the object exactly once. Note that this may 
+  introduce distortion. 
+  <LI>Click OK. </LI></OL>
+  </TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=ChangingtheColorofanObject></A>Changing the Color of an Object </H2>
+<P CLASS="two">To change the color of an object, follow these steps:</P>
+<OL CLASS="two">
+  <LI>Right-click the object in the 3D window to select it. The Properties list 
+  for the object appears in the Properties Box. 
+  <LI>In the Hierarchy Tree, click on the triangle to the left of the selected rect to display the deeper properties like <B>Material</B>.  The Material Properties list appears in the Properties Box. 
+  <LI>Double-click <B>Color</B> listed under Material Properties. The Edit Color box opens, showing current values for 
+  red, green, and blue. 
+  <LI>Type in new values for each color in the mix, in the range 0- 255. 
+  <LI>Click OK. </LI></OL>
+  </TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=AddingTexttoaWall></A>Adding Text to a Wall </H2>
+<P CLASS="two">To add text to a wall, follow these steps:</P>
+<OL CLASS="two">
+  <LI>Right-click the wall in the 3D window to select it. 
+  <LI>In the Hierarchy Tree, click on the triangle next to the selected wall to display the deeper 
+  properties like <B>Material</B>. 
+    <LI>Click the triangle to the left of  <B>Material</B>. The Material Properties list appears in the Properties Box. 
+  <LI>Click on <B>Texture</B> listed beneath Material. The MaterialTexture Properties list appears in the Properties Box. 
+  <LI>Double-click <B>Texture Type</B> listed in the MaterialTexture Properties. 
+  <LI>In the Edit Texture Type box, select "Texture created from a text string" 
+  and click OK.<BR><B>Note:</B> If you later decide to remove the text and use a 
+  texture file instead, this property must be reset first. 
+  <LI>In the Material Texture Properties, double-click <B>Text</B>. 
+  <LI>In the Edit Text box, type in the text that will appear on the wall, and 
+  click OK. </LI></OL>
+<P CLASS="two">The text string appears on the wall. Click the Drive button and move around the room to 
+check the appearance of the text. If necessary, you can adjust it by editing the 
+following properties in the Material Texture Properties list:</P>
+<UL CLASS="two">
+  <LI><B>Font</B> lets you enter the name of a font. You must check this against 
+  a list of the fonts present on your (or the end-user's) system. 
+  <LI><B>Size</B> controls the font size of the text, and should be set to one 
+  of the available font sizes for your system, but not greater than 48. Because 
+  the text is scaled to 128x128 pixels, the font size will affect resolution 
+  rather than the actual text size. Choose the smallest size that is effective. 
+  <LI><B>Foreground Color</B> sets the color of the text itself, based on values 
+  for red, green, and blue. 
+  <LI><B>Background Color</B> sets the color of the wall behind the text, based 
+  on values for red, green, and blue. </LI></UL>
+  </TD></TR></TABLE>
+
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD><a name=CreatingaNewRoom></a>
+<H2>Creating a New Room </H2>
+<P CLASS="two">To create a new room, follow these steps: </P>
+<OL CLASS="two">
+
+  <LI>Scroll up in the Hierarchy Tree until you can see <B>Rooms</B> listed near the top. 
+  <LI>From the Objects Library, click and drag a <B>Default Room</B> into the Rooms section of the Hierarchy Tree.
+  <LI>A new Room has been added to the Rooms list. 
+  You can now edit the properties of the new room (it is selected in the Hierarchy Tree), but the 3D 
+  window still displays the previous room. Until you have connected the two 
+  rooms with portals, the only way to view and navigate in the new room is to 
+  use the Change Location option under WorldsMarks (described in the next steps). 
+  <LI>Click on the WorldsMarks button on the left side of the 3D viewer, and choose Change Location.
+	<LI>In the Change Location edit box, you'll see the current room listed within the URL.  Change that to the room you would like to go to.  For example, if you are in Room1 and you want to go to Room2, change the "Room1" part of the URL to "Room2" and click OK.  
+</LI></OL>
+  </TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=CreatingPortals></A>Creating Portals </H2>
+<P CLASS="two">The simplest way to open a portal in an existing wall is to delete the wall 
+and replace it with another wall containing a portal.</P>
+<OL CLASS="two">
+  <LI>Right-click a wall in the 3D window to select it. If the wall is not selected in the Hierarchy Tree (a yellow rectangle around it), click on its name listed in the Hierarchy Tree to select it.
+  <LI>Click Delete (to the right of the Properties Box). The selected wall disappears. 
+  <LI>From the Objects Library, click and drag a wall/portal object to the Room Environment Contents of the Hierarchy Tree.  For example, if you've deleted a Cyan wall, you'll want to drag and drop an East Wall/Portal object into the Room Environment Contents listed in the Hierarchy Tree.
+</OL>
+	</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=ConnectingPortals></A>Connecting Portals </H2>
+<P CLASS="two"><B>Note:</B> You must create both Portals first before trying to connect 
+them, referring to each portal by name. Note that you can create the second room 
+(and its corresponding portal) while still in the first room -- see <A HREF="WorldsShaper_Tutorial.html#T1L2">Tutorial 1: Lesson2</A> for detailed instructions.</P>
+<P CLASS="two">To connect one portal to another portal, follow these steps:</P>
+<OL CLASS="two">
+  <LI>Right-click on a room's portal to bring up its Portal Properties in the Properties Box. 
+  <LI>In the Portal Properties, double-click on Destination Portal Name. 
+  <LI>Type in the name of the destination room's portal and click OK. 
+  <LI>Double-click on Destination Room Name. 
+  <LI>Enter the name of the room whose portal you're connecting to and click OK. 
+</OL>
+<P CLASS="two">To connect the destination portal back to the current room, walk into the 
+newly connected room through the portal you just connected, turn around and 
+select the destination portal. Follow the steps above, connecting the 
+destination portal and name to the current room.</P>
+<P CLASS="two"><B>NOTE:</B>If you ever see this type 
+of message:<BR></P>
+<P CLASS="two"><TT>Portal Portal331 specifies a connection to null#Room#SomePortal which 
+isn't a portal! </TT></P>
+<P CLASS="two">you've most likely misspelled either the Destination Room Name or the Destination Portal Name.  Make sure that you have typed in the names <I>exactly</I> - upper and lower case letters, blank spaces, etc.</P>
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=ConnectingWorlds></A>Connecting Worlds</H2>
+<P CLASS="two">To connect two worlds, you will need to add a RemotePortal action to the portals that are going to be connecting the two worlds.</P>
+<P CLASS="two"><B>NOTE:</B> Currently there are Remote Portals listed in the Objects Library.  These are obsolete and will be removed in a future version of WorldsShaper.
+<P CLASS="two">To connect two worlds via portals, follow these steps: </P>
+<OL CLASS="two">
+  <LI>Follow the instructions above for <A HREF="#CreatingPortals">creating</A> and <A HREF="#ConnectingPortals">connecting</A> portals.  You'll notice that in this case the portals don't automatically connect. In addition to entering the Destination Room Name and Destination Portal Name, you also need to enter the <B>Destination World URL</B>. 
+<LI>Under the Portal Properties, double-click on Destination World URL.  
+<LI>In the Edit box, either select the destination world from the list, or type in:<BR>
+<TT>rel:home:subdirectory/worldfile</TT><BR>
+filling in "subdirectory" and "worldfile" with the relevant information for the destination world.  For example:<BR>
+<TT>rel:home:Tutorial/MyWorld.world</TT><BR>
+The portals will now appear to work, <I>but don't walk through the portal yet</I>.  It's easier to finish the process on this portal first before walking through to the other world.
+  <LI>From the Actions Library, drag and drop a RemotePortal action to the portal you're working with listed in the Hierarchy Tree. An RPAction should now be listed under the portal's Actions list. (See <A HREF="#AddinganAction">Adding an Action</A> for further information)
+<LI>You now need a trigger for the RPAction.  From the Behaviors Library, drag and drop a SameRoom sensor to the portal you're working with listed in the Hierarchy Tree. A SameRoomSensor should now be listed under the portal's Event Handlers list. (See <A HREF="#AddingaBehavior">Adding a Behavior</A> for further information)
+<LI>Click the triangle to the left of the new SameRoomSensor listed in the Hierarchy Tree.
+<LI>Beneath SameRoom sensor, click on <B>Targets</B>.
+<LI>To the right of the Properties Box, click on the <B>Add</B> button.
+<LI>In the Add to Targets box that comes up, select the RPAction you just added to the portal and click OK.
+Now the next time you load this world and enter this room, the other world you have connected to will load.
+<LI>Save your world.
+<LI>Walk through the portal and repeat the above steps with the connecting portal in the other world.
+</LI></OL>
+
+<P CLASS="two">If a world you are connecting to takes awhile to load, you will see a default solid color where the portal is until the world has finished loading.  To avoid this, you must add a texture to the portal itself.  You will only see the texture when the world on the other side is loading. To add a texture to a portal, follow these steps:</P>
+
+<OL CLASS="two">
+<LI>In the Hierarchy Tree, find the portal you want to add a texture to.
+<LI>Click on the triangle to next to it to reveal further properties.
+<LI>Click on the triangle next to <B>Material</B> listed beneath the portal.
+<LI>Click on <B>Texture</B> to bring up the MaterialTexture Properties in the Properties Box.
+<LI>Double-click <B>File</B> listed under the MaterialTexture Properties.
+<LI>In the Edit File box, type the relative path of the texture.  For example:<BR>
+<TT>tex/wall1.bmp</TT><BR>
+and click OK.
+<LI>You won't see the texture if the world on the other side has already loaded. 
+</OL>
+
+
+
+  </TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+<A NAME="Libraries"></A>
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=AddinganItemfromaLibrary></A>Adding an Item from a Library </H2>
+ <P CLASS="two">The libraries can be viewed with icons or just with text.  Under the Libraries menu at the top of WorldsShaper, click on <B>Icons On/Off </B>to toggle between the icons and text.</P> 
+<P CLASS="two">All of the libraries use the same "drag and drop" method to add a library item to the hierarchy or to another object. To add an item from a library, follow these steps:</P>
+<OL CLASS="two">
+  <LI>Scroll up or down the Hierarchy Tree to find the object or property to which you want to add a library item.
+  <LI>Click on the appropriate Library tab (Objects, Actions, Behaviors) in WorldsShaper to view a library catalog.
+  <LI>In the library, click on the item you want, holding down the mouse button, then drag it to the Hierarchy Tree and drop it (release the mouse button) in the appropriate section of the Hierarchy.  The following four sections will help you with the specifics for adding <A HREF="#AddinganObject">Objects</A>, <A HREF="#AddingaTexture">Textures</A>, <A HREF="#AddinganAction">Actions</A> and <A HREF="#AddingaBehavior">Behaviors</A>.
+
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=AddinganObject></A>Adding an Object</H2>
+<P CLASS="two">To add an item from the Objects Library, follow these steps:</P>
+<OL CLASS="two">
+  <LI>Items in the Objects Library can be added to three places in the Hierarchy:
+<UL CLASS="two">  <LI>Room Contents
+  <LI>Room Environment Contents
+  <LI>Infinite Background</UL>
+  Most objects can also be added to the contents of WObjects.  Scroll through the Hierarchy Tree until you can see the place where you want to add the object.
+  <LI>Click the Objects tab in the libraries section of WorldsShaper to see the <A HREF="#ActionsCatalog">catalog of Objects</A>.
+<LI>In the library, click on the object you want, holding down the mouse button, and drag it to the spot in the Hierarchy where you want the object.  Release the mouse button.  The object you selected is added to the Hierarchy tree with a default name, and the object's properties appear in the Properties Box. 
+<LI>If you would like to give your object a distinctive name, double-click on <B>Name</B> in the Properties Box and enter a new name in the Edit Name box.  Click OK.
+
+<P CLASS="three">If you have chosen a Shape from the Object Library, the Shape is added at 
+location 0,0,0. Edit its Transform property to move it to 
+a new location and/or scale it to the correct size.</P>
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD><A name=SensorCatalog></A>
+<H2><A name=ObjectsCatalog></A>Objects Catalog</H2>
+ <LI><A 
+  href="#commonO">Parameters 
+  common to all objects</A> 
+  <LI>Objects:
+<TABLE>
+<TR><TD>    <UL CLASS="two">
+      <LI><A 
+      href="#Walls">Walls (North, South, East and West)</A> 
+
+      <LI><A 
+      href="#Floor">Floor</A> 
+
+      <LI><A 
+      href="#Ceiling">Ceiling</A> 
+
+      <LI><A 
+      href="#Shape">Shape (empty)</A> 
+
+      <LI><A 
+      href="#WallsPortal">2 Walls grouped with a Portal (North, South, East and West)</A> 
+	  
+	  
+	  <LI><A 
+      href="#Grouper">Grouper</A>
+	  
+	  <LI><A 
+      href="#HologramObject">Hologram (empty)</A>
+	  
+	  <LI><A 
+      href="#SquareRoom">Default Room</A>
+	  
+	  <LI><A 
+      href="#Portal">Portal (North, South, East and West)</A>
+	  
+	  <LI><A 
+      href="#NametagDrone">NametagDrone</A>
+	  
+	  <LI><A 
+      href="#FloorPatch">Floor Patch</A> 
+</UL></TD>
+	  
+	  <TD>    <UL CLASS="two">
+
+      <LI><A 
+      href="#Articulated">PosableShape (avatar)</A> 
+
+      <LI><A 
+      href="#DoubleDoorway">Double Doorway</A> 
+
+      <LI><A 
+      href="#ShapedRoom">Shaped Room</A> 
+	  
+	    <LI><A 
+      href="#SlowShapedRoom">Slow Shaped Room</A> 
+	  
+	  <LI><A 
+      href="#TwoWayPortal">Two Way Portal</A>
+	  
+	  <LI><A 
+      href="#MontyDoor">Monty Door</A>
+	  
+	  <LI><A 
+      href="#WearWall">Wear Wall</A>
+	  
+	  <LI><A 
+      href="#AnimatingDoor">Animating Door</A>
+	  
+	  <LI><A 
+      href="#AdBanner">Ad Banner</A>
+	  
+	  <LI><A 
+      href="#WebPage">Web Page</A>
+	  
+	  <LI><A 
+      href="#VideoWall">Video Wall</A>
+
+	</UL></TD>
+	  
+	  </TR></TABLE>
+	  <HR>
+<H3><A name=commonO></A>Parameters common to all objects</H3>
+<P CLASS="three">There are seven parameters that all Objects share in common. These are:</P>
+<UL CLASS="two">
+  <LI><B>Name<BR></B>This is simply the name you choose to give the Object. The Name you give an object appears in the Hierarchy Tree.
+<LI><B>Transform<BR></B>Transform is the position, scale and rotation of an object.  The Edit Transform box allows you to move, rotate and scale walls, floors, and ceilings.
+<LI><B>Bumpable</B><BR>Turns on and off the wall's bumpability.  When turned off (set to false) a user can move right through the wall.
+  <LI><B>Visible</B><BR>Turns on and off the wall's visibility.  When turned off (set to false) the wall is invisible.
+  <LI><B>Sharing Mode<BR></B>For sharing an object's state between users.  However, shared state is currently disabled.
+<LI><B>Tool Tip Text</B><BR>Used in conjunction with the Mouse Change property.  When a user passes the mouse over an object that has Mouse Change property set to true (so that the mouse turns into a "hand") you can also set it so that a little yellow tag appears with some explanatory text inside. In the Tool Tip Text box, type in whatever text you want to be displayed. To add a line break to a tool tip, use the '|' character to denote the line break.
+<LI><B>Mouse Change</B><BR>If set to true, the cursor will turn into a "hand" when passed over the object, indicating to the user that it can be clicked on.
+    
+  </UL>
+<HR>
+
+<H3><A name=Walls></A><A name=Floor></A><A name=Ceiling></A>Walls, Floor and Ceiling</H3>
+<P CLASS="three">You can choose from four walls as objects: North facing  (Cyan), South facing (Yellow), East facing (Magenta) and West (Red).  The default size of each wall is 1000 WorldsShaper units wide by 240 WorldsShaper units high. The Cyan wall's lower left corner comes in at the coordinates 0,0,0, the Yellow wall at 0,1000,0, the Red wall at 1000,1000,0, and the Magenta wall at 1000,0,0.  A Ceiling and Floor are both 1000x1000 WorldsShaper Units.</P>
+<H4>Specific properties of Walls, Floor and Ceiling</H4>
+<UL CLASS="four">
+  <LI><B>From</B><BR>The coordinates of the rect's position.  When selected, each wall, floor or ceiling has a red dot that designates the position of that object.  Changing the From parameter moves this point to the new coordinates.
+  <LI><B>To</B><BR>The coordinates of the corner opposite the From coordinates.  For example, a wall's From coordinate is located at the lower left corner of the wall.  A wall's To coordinate is at the upper right corner of the wall.  You can change the To coordinate to scale a wall, floor or ceiling.
+  <LI><B>Extent</B><BR>This is the size of the wall, floor or ceiling in WorldsShaper units (width and height)
+  <LI><B>Tile Size</B><BR>Tile Size designates how many times a texture will tile on the surface.  The default is 0,0 which stretches the texture to fit the rect (tile once).
+  <LI><B>Tile Origin</B><BR>You can change how much of a texture is seen and/or where on the texture the tiling begins by changing the Tile Origin.
+  <LI><B>Flip Alternate U</B><BR>In conjunction with the Tile Origin, Flip Alternate U flips a texture along its x axis (mirrors it horizontally). For example, to mirror(flip) a 240x300 texture horizontally (left/right) you
+would set "Flip Alternate U" to true and enter a value of 240 for the "u" or
+X coordinate of the Tile Origin, Tile Origin = (240,0).
+  <LI><B>Flip Alternate V</B><BR>In conjunction with the Tile Origin, Flip Alternate V flips a texture along its y axis (mirrors it vertically). For example, to mirror(flip) a 240x300 texture vertically (up/down) you would
+set "Flip Alternate V" to true and enter a value of 300 for the "v" or y
+coordinate of the Tile Origin, Tile Origin = (0,300).
+  </LI>
+  </UL>
+<HR>
+
+<H3><A name=Shape></A>Shape (empty)</H3>
+<P CLASS="three">A shape is any .rwx or .rwg file you want to add to a room, such as a table.</P>
+<H4>Specific properties of Shape</H4>
+<UL CLASS="four">
+  <LI><B>File</B><BR>When a shape is first added to a world, it comes in as a default cube.  You must attach an .rwx or .rwg file to the empty shape.  Double-click File and type in the relative URL for your shape file. Most of the current worlds have the shape files in a "tex" directory within the project directory, so in that case you would type in<BR> <TT>tex/shape.rwx</TT><BR>and then click OK.
+  <LI><B>Prepare Room</B><BR>Used when importing 3D Max files as rooms.  
+  </LI>
+  </UL>
+<HR>
+
+<H3><A name=WallsPortal></A>2 Walls Grouped with a Portal</H3>
+<P CLASS="three">These are pre-built WObjects that contain two small walls with a portal inbetween them, their total width = 1000 WorldsShaper units. They are listed in the Objects Library as <B>South Wall/Portal</B>, <B>West Wall/Portal</B>, etc., and have the same properties as a normal WObject (see <A HREF="#Grouper">Grouper</A>). </P>
+
+<P CLASS="three">NOTE:  Currently there is a bug with portals grouped in a WObject.  They will not connect with other portals.  You will have to delete the Portal from the WObject contents (listed as "east facing", "west facing" etc.),
+ and then add a single Portal to the Room Environment Contents to replace it.</P>
+
+<HR>
+	 
+
+<H3><A name=Grouper></A>Grouper (WObject)</H3>
+<P CLASS="three">WObjects allow you to group objects together.  Moving and scaling the WObject affects all of its contents as a group. NOTE:  The Visible parameter of a WObject does not work.  To make a WObject invisible/visible, you would have to change the Visible parameter of each of the WObjects contents individually.</P>
+
+<HR>
+
+<H3><A name=HologramObject></A>Hologram (empty)</H3>
+<P CLASS="three">A Hologram is a "fake" 3D object.  It is actually a .mov file that contains 1 or more 2D views of an object.  To add a Hologram to a room, drag a Hologram (empty) object to the Room's Contents in the Hierarchy Tree.  You then double-click File under Hologram Properties and add a .mov file to the empty Hologram. 
+<H4>Specific properties of Hologram</H4>
+<UL CLASS="four">
+  <LI><B>Extent</B><BR>This is the size of your Hologram (width and height)
+  <LI><B>File</B><BR>in the Edit File box, type in the filename of the .mov you want to use for the Hologram.
+  <LI><B>Viewplane Aligned</B><BR>Under development.
+  <LI><B>Rough Cut Alignment</B><BR>Under development.
+  <LI><B>Scale Distance</B><BR>If you add a Scale Distance, when a user gets that distance away from the Hologram, the Hologram will appear to maintain its size - it will not appear to get smaller the farther away the user gets. The same effect is used with the avatar name tags - the name tags above the avatars appear to remain a certain size no matter how far away you get from them.
+  <LI><B>Autosize</B><BR>Under development.
+  </LI>
+  </UL>
+<HR>
+
+<H3><A name=SquareRoom></A>Default Room</H3>
+<P CLASS="three">The Default Room object is just that, a default square room (1000x1000) with four walls, a floor and a ceiling. You add a Default Room to the Rooms section of the Hierarchy Tree (near the top of the tree).  When you drag and drop a Default Room into the Hierarchy Tree, a new room will be listed there, but you won't be able to see it in the 3D viewer.  To get to the new room, go to WorldsMarks and choose the Change Location option.  Change the room name within the URL to the new room's name and click OK.  You will be teleported to the new room.</P>
+
+<H4>Specific properties of Default Room</H4>
+<UL CLASS="four">
+  <LI><B>Sky Color</B><BR>Enter different RGB values, 0 - 255, to change the color of the default sky.  To delete the sky (make it null) select it in the Room Properties and click the Delete button.
+  <LI><B>Ground Color</B><BR>Enter different RGB values, 0 - 255, to change the color of the default ground.  To delete the ground (make it null) select it in the Room Properties and click the Delete button.
+  <LI><B>Default Position, Default Orientation Axis, Default Orientation Angle</B><BR>These are the default coordinates used when a user is teleported to this room.  They will enter at these coordinates.  If you want users to "land" in a different spot, change these properties accordingly.
+  <LI><B>VIP Only</B><BR>If designated as true, only VIP users will be able to enter this room.
+  <LI><B>Visible to VIP Only</B><BR>Under development.
+  <LI><B>Light Source Direction</B><BR>Change the direction of the room's light source by entering values for each axis between -1 and 1.
+  <LI><B>Light Color</B><BR>Enter an RGB value to change the color of the room's light source.
+  <LI><B>Time To Auto-Teleport</B><BR>If you have an Auto-Teleport destination (see next property), set the amount of time, in seconds, the users will remain in this world before being automatically teleported. 
+<LI><B>Auto-Teleport destination</B><BR>You can create a world where the users are automatically teleported to another destination after they have been in the world a certain amount of time.  Set the new destination here.
+    <LI><B>Allow Teleporting</B><BR>If you do not want users to be able to bookmark your world in order to teleport to it later, set this to false.
+</UL>
+<HR>
+
+<H3><A name=Portal></A>Portal (North, South, East and West)</H3>
+<P CLASS="three">Portals are basically doorways that connect rooms and worlds together. A Portal's default size is 250 wide by 240 high.  You can alter a portal's size, but it's a good idea to keep connecting portals the same size. Portals are generally added to a Room's Environment Contents.  To connect two worlds together, you will need to add a <A HREF="#RemotePortal">RPAction (Remote Portal Loading)</A> to the portal.</P>
+
+<H4>Specific properties of Portals</H4>
+<UL CLASS="four">
+  <LI><B>From</B><BR>The coordinates of the Portal's position (lower left corner).  Changing the From property moves this point to the new coordinates.
+  <LI><B>To</B><BR>The coordinates of the upper right corner of the Portal.  You can change the To coordinate to scale the Portal.
+  <LI><B>Extent</B><BR>This is the size of the Portal in WorldsShaper units (width and height)
+    <LI><B>Destination World URL</B><BR>This property is used only if you're connecting to another world and a Remote Portal Action has been added to the portal.  The destination world URL is usually typed in as <TT>rel:home:worlddirectory/worldfile.world</TT> assuming that the world you are connecting to is in the same "home" directory.
+  <LI><B>Destination Room Name</B><BR>Type in the Name of the Room you are connecting to.
+  <LI><B>Connect to a portal</B><BR>The default for this property is true.  You can however connect to any part of another room by specifying this property as false (choose "Use location and orientation" in the edit box) and designating a Destination Position and Destination Orientation (see these properties below).
+  <LI><B>Download if world not present</B><BR>Normally if a user does not have the world that the portal is connecting to, a dialogue box comes up offering them a download (unless the world has been designated as private - see <A HREF="#UniverseMap">Universe Map</A> section).  If you don't want the user to automatically get this download message (in other words, if they don't have the connecting world, they won't get it), then set this property to false (select "Never Download" in the edit box).
+  <LI><B>Destination Portal Name</B><BR>Enter the name of the destination portal.  Be sure to type it exactly (capitals, spaces, etc.)
+  <LI><B>Destination Position</B><BR>Enter a x,y,z postion only if <B>Connect to a portal</B> property has been set to false.
+  <LI><B>Destination Orientation</B><BR>Enter an orientation (degrees, clockwise from North) only if <B>Connect to a portal</B> property has been set to false.
+  <LI><B>Mirrored</B><BR>To make a mirror, set this to true and assign Destination Portal and Destination Room Name to be the same as the Room containing the portal, so that the portal is basically connecting to itself.</UL>
+<P CLASS="three">You can add a texture to a portal just like you would a rect.  The texture will only appear if the room or world that it's connecting to hasn't loaded yet.  This is useful when a portal is connecting to another, larger world that takes awhile to download. If you didn't assign a texture to your portal, the user would see the default solid color of the portal. If you add a texture to your portal, use the properties below to change the tiling.</P>
+<UL class="three">
+  <LI><B>Tile Size</B><BR>Tile Size designates how many times a texture will tile on the surface.  The default is 0,0 which stretches the texture to fit the Portal (tile once).
+    <LI><B>Tile Origin</B><BR>You can change how much of a texture is seen and/or where on the texture the tiling begins by changing the Tile Origin.
+  <LI><B>Flip Alternate U</B><BR>In conjunction with the Tile Origin, Flip Alternate U flips a texture along its x axis (mirrors it horizontally). For example, to mirror(flip) a 240x300 texture horizontally (left/right) you
+would set "Flip Alternate U" to true and enter a value of 240 for the "u" or
+X coordinate of the Tile Origin, Tile Origin = (240,0).
+  <LI><B>Flip Alternate V</B><BR>In conjunction with the Tile Origin, Flip Alternate V flips a texture along its y axis (mirrors it vertically). For example, to mirror(flip) a 240x300 texture vertically (up/down) you would
+set "Flip Alternate V" to true and enter a value of 300 for the "v" or y
+coordinate of the Tile Origin, Tile Origin = (0,300).
+  </LI>
+  </UL>
+<HR>
+
+<H3><A name=NametagDrone></A>Nametag Drone</H3>
+<P CLASS="three">Under development.</P>
+
+<HR>
+
+<H3><A name=FloorPatch></A>Floor Patch</H3>
+<P CLASS="three">A Floor Patch is used when you want a floor that's not level.  With a Floor Patch, you can create hills and/or valleys. Avatars will walk up or down these patches accordingly.  For the Floor Patch to work, it must be added to the Room Contents, not the Environment Contents. 
+As a whole, you can move a Floor Patch horizontally and you can scale it, however you can't move it up or down the z axis.  To change the location of a Floor Patch along the z axis, each corner must be raised separately (see parameters below).</P>
+
+<P CLASS="three">You can add a texture to the Floor Patch, or you can add regular floor rects over the patch, texture them, and make the Floor Patch invisible.  To add a texture to the Floor Patch itself is just like adding a texture to a normal rect.  Find Texture listed under the Floor Patch Material in the Hierarchy Tree and select it to bring up the MaterialTexture Properties in the Properties Box. Double-click File and then enter the relative URL for the texture you want to apply. When you click OK, you'll notice that nothing happens.  You have to select the Patch in the Hierarchy Tree to bring up the RectPatch Properties.  Double-click on # tiles (x) or # tiles (y).  You don't have to enter any numbers into the box, just click OK and the texture will appear.</P>
+
+<H4>Specific properties of Floor Patch</H4>
+<UL CLASS="four">
+  <LI><B>Length (y)</B><BR>Specifies the length of the Floor Patch.   Default is 1000.
+  <LI><B>Width (x)</B><BR>Specifies the width of the Floor Patch.   Default is 1000.
+  <LI><B>0,0 corner</B><BR>Enter z axis coordinate to raise this corner.
+  <LI><B>0,y corner</B><BR>Enter z axis coordinate to raise this corner.
+  <LI><B>x,y corner</B><BR>Enter z axis coordinate to raise this corner.
+  <LI><B>x,0 corner</B><BR>Enter z axis coordinate to raise this corner.
+  <LI><B># Tiles (x)</B><BR>Enter the number of times the texture should tile along the x axis.
+  <LI><B># Tiles (y)</B><BR>Enter the number of times the texture should tile along the y axis.
+  <LI><B>Tile Offset (x) and Tile Offset (y)</B><BR>Currently their are bugs with this property.  Entering too high a number will crash WorldsShaper.
+  
+  </LI>
+  </UL>
+<HR>
+
+<H3><A name=Articulated></A>PosableShape</H3>
+<P CLASS="three">The PosableShape is used when you want an avatar or "bot" in your world.  To add an avatar to your world, drag and drop a PosableShape object to the Contents of the Room you want the avatar to be in.  A red dot appears at 0,0,0.  To see the default avatar, double-click on File under PosableShape Properties and change <TT>avatar:aura.OPG.rwg</TT> to <TT>avatar:aura.rwg</TT>, or replace "aura.rwg" with any avatar name listed in the VIP/Change Avatar list.  Use the horizontal move button or Transform property to move the avatar to the location you want.  To make your avatar walk when triggered, add a <A HREF="#Move">Move action</A> to the PosableShape (the avatar will automatically walk when moved). To make your bot perform an action other than walking,  add a <A HREF="#Posable">Posable action</A> to it.</P>
+<H4>Specific properties of PosableShape</H4>
+<UL CLASS="four">
+  <LI><B>Center of Gravity</B><BR>Most of the "human" avatars have their pivot point in the center of their shape.  However, some of the animal avatars, such as the dinosaur, have their pivot point somewhere other than their center of gravity.  If you want to move the pivot point of the avatar to the center of gravity for that avatar, designate this property as true.
+  <LI><B>File</B><BR>Enter <TT>avatar:name.rwg</TT> to designate which avatar appears, where "name" is the name of the avatar as listed in the VIP/Change Avatar listing.
+  <LI><B>Prepare Room</B><BR>Used when importing 3D Max files. Not used with Posable Shapes.
+  </LI>
+  </UL><BR>
+<HR>
+
+<H3><A name=DoubleDoorway></A>Double Doorway</H3>
+<P CLASS="three">A Double Doorway object is a portal with two doors,  a door jamb and a built-in move action and sensor so that the doors open as a user approaches.  When you add a Double Doorway, add it to the Room Environment Contents.  In the Hierarchy Tree it will be listed as DoorwayPortal, and it will come in to the room located at 0,0,0 and be facing south.  Use the DoorwayPortal's Transform property to  move the DoorwayPortal to its final location. The door jamb is 25 WorldsShaper units deep, and when you get the door oriented the way you want it, you will need to move the DoorwayPortal back <I> into</I> the surrounding wall 25 WorldsShaper units (otherwise the door jamb will be sticking out into the room).</P>
+
+<P CLASS="three">The doors and door jamb are part of the DoorwayPortal's Contents. Texture each one of these rects as desired.</P>
+
+<P CLASS="three">The specific properties of Double Doorway (DoorwayPortal) are the same as the <A HREF="#Portal">specific properties of a Portal</A>.</P>
+
+<HR>
+
+<H3><A name=ShapedRoom></A>Shaped Room</H3>
+<P CLASS="three">A Shaped Room and SlowShaped Room (see below) are used when importing rooms that have been built in a 3D modelling program such as 3D Studio Max.  You add a Shaped Room to your world just as you would a Default Room.  Drag and drop the Shaped Room into the Rooms section of the Hierarchy Tree.  A Shaped Room's properties are the same as for a <A HREF="#SquareRoom">Default Room</A>.  The difference lies in the presence of a RoomShape within the ShapedRoom's Environment Contents.  In the RoomShape Properties, you use the File property to designate the 3D Model file you are importing (an .rwx or .rwg file). 
+
+<HR>
+<H3><A name=SlowShapedRoom></A>SlowShapedRoom</H3>
+<P CLASS="three">A SlowShaped Room is almost the same as the Shaped Room above.  The only difference is that the RoomShape is located in the Room Contents instead of the Environment Contents - hence the "Slow" part of this object's name  - it will slow down the rendering of the room to have the RoomShape in the Contents vs. the Environment Contents.</P>
+
+<HR>
+<H3><A name=TwoWayPortal></A>TwoWayPortal</H3>
+<P CLASS="three">A TwoWay Portal was designed to automatically create its counterpart (the portal it's connecting to) in the connecting room.  However, it currently has some problems, and it's probably easier to simply create the two portals yourself.</P>
+
+<HR>
+<H3><A name=MontyDoor></A>MontyDoor</H3>
+<P CLASS="three">A MontyDoor (named after Monty Hall from the show "Let's Make a Deal") is a portal for viewing avatars (as in the Avatar Gallery) or 3D merchandise (as in the 3D WorldsStore).  When a user clicks on a Monty Door, it gives them the option of changing their avatar (SelectAvatar action) or in the case of the store, they can get more information on the selected merchandise (SendURL action).</P>
+
+<P CLASS="three">To see how this works, go to the Avatar Gallery and right click on any of the avatar posters, or go to the 3D store and right-click on any of the merchandise.</P>
+
+
+<HR>
+<H3><A name=WearWall></A>WearWall</H3>
+<P CLASS="three">The WearWall object is used in conjunction with other rects that have click sensors.  These click sensors are configured to trigger the Wear Wall so that a user can change the texture or head of their avatar ( e.g. in the Gallery of Metamorphics or the Dressing Rooms within the Avatar Gallery).  To learn how to create a Wear Wall, go to the<a href="#CreatingWearWall">Creating a Wear Wall</a> section of this document.</P>
+
+<HR>
+<H3><A name=AnimatingDoor></A>AnimatingDoor</H3>
+<P CLASS="three">Animating Doors use a frame list of 2D images to simulate the opening and closing of a door.  Rather than have a rect or rects physically open with a Move action, the Animating Door plays an animation as you approach the door, and the animation in reverse as you walk  away from it.  You can also add opening and closing sounds, and an Animating Door also includes the portal needed to connect to another room. Examples of this type of door are found in the old Worlds Center (Worlds Chat space station).  If you go to the Hub of the space station and look at the doors there, you'll see that they use Animating Doors.  </P>
+
+<P CLASS="three">Currently there's a bug where the AnimatingDoor comes in only 1x1 in size, located at 0,0,0.  Use the Extent and Transform properties to size and move the door into position.</P>
+
+<H4>Specific properties of AnimatingDoor</H4>
+<UL CLASS="four">
+  <LI><B>From</B><BR>The x,y,z coordinates of the lower left corner of the door.
+  <LI><B>To</B><BR>The x,y,z coordinates of the upper right corner of the door.
+  <LI><B>Extent</B><BR>The width and height of the door.
+  <LI><B>Frame List</B><BR>List the relative URLs for the texture files to be used in your animation, just like you would for an Animate Action.  Leave a space between each file.  For example:<BR>
+<TT>tex/door1.bmp tex/door2.bmp tex/door3.bmp</TT>
+  <LI><B>Start</B><BR>This is the location, relative to the door, of the "start" point that triggers the "opening" (the animation) of the door.
+    <LI><B>End</B><BR>This is the location, relative to the door, of the point that triggers the closing of the door (the animation in reverse).
+	<LI><B>Time Per Frame</B><BR>The lower this number, the faster the animation will run.
+	<LI><B>Open Sound URL</B><BR>Enter the URL for the opening door sound.  For example:<BR><TT> rel:home:MyWorld/sounds/opendoor.wav</TT>
+	<LI><B>Close Sound URL</B><BR>Enter the URL for the closing door sound.  For example:<BR><TT> rel:home:MyWorld/sounds/closedoor.wav</TT>
+  </LI>
+  <P CLASS="three">The rest of the properties of AnimatingDoor are <A HREF="#Portal">Portal Properties</A>.  Change these properties as you would for a normal portal.</P>
+  </UL><BR>
+
+ <HR>
+<H3><A name=AdBanner></A>Ad Banner</H3>
+<P CLASS="three">Two new objects introduced in GDK 1844, the Ad Banner and Web Page object  replace the Billboard attribute.  An Ad Banner object comes in the size of a default ad banner, 468 x 60, while a Web Page object by default comes in at 640 x 480.  Both objects display web pages on a 2D rect, allowing for web-based content to be integrated into a 3D world.</P>
+
+<H4>Specific properties of Ad Banner</H4>
+
+<UL CLASS="four">
+  <LI><B>From</B><BR>The x,y,z coordinates of the lower left corner of the ad banner.
+  <LI><B>To</B><BR>The x,y,z coordinates of the upper right corner of the ad banner.
+  <LI><B>Extent</B><BR>The width and height of the ad banner.
+  <LI><B>Wall's URL</B><BR>This is the URL that will be displayed as a texture map on
+  the Ad Banner wall. <b>Important Note!</b> Make sure this
+  web page does NOT USE FRAMES. There is a bug beyond our control in the
+  Internet Explorer 5 control that will not draw frames properly on pages
+  higher than 150 pixels.
+  <LI><B>Wall Page Width</B><BR>The default width is 468.  Change as appropriate.
+  <LI><B>Wall Page Height</B><BR>The default height is 60.  Change as appropriate.
+  <LI><B>Wall's Refresh Rate</B><BR>This controls how often the web-based texture is updated
+  from Internet Explorer. A value of �1 would mean that the texture would be
+  updated only when the page is initially loaded. A value of 1 would update the texture every frame of animation, and a value of 5 updates the texture every five frames. In general, a page that features a lot of
+  animation should use low numbers and pages that do not animate much or
+  animate infrequently should use high numbers or �1. Updating a web-based texture frequently can noticably affect performance, so you will need to find a good compromise between performance
+  and fluid animations.
+  <LI><B>Use Scrollbars</B><BR>If set to true, scrollbars will appear on top of the 2D ad banner.
+  <LI><B>Pass Clicks</B><BR>If set to Yes, the ad banner will pass any clicks on it
+  through to Internet Explorer, where they may do such things as activate
+  hyperlinks or interact with games. If
+  set to No, a click on the ad banner will launch the 2D web page specified by
+  Target URL within the UI of WorldsPlayer.
+  <LI><B>Target URL for click</B><BR>If you have specified that clicks are not passed through
+  this ad banner, a click on the ad banner is intercepted by the WorldsPlayer
+  and will cause a 2D web page to appear over the 3D window, set to the URL
+  specified in this property. This is
+  NOT the URL displayed on the Ad Banner Wall itself. If the ad banner is set to pass clicks through to Internet
+  Explorer, this property will be ignored.
+  <LI><B>Target Page Size Units</B><BR>This controls whether the x and y dimensions of the target page are interpreted as a
+percentage or as pixels.
+  <LI><B>Target Page X overlay %</B><BR>If �Pass Clicks� is set to No, and a click on the ad banner
+  will launch a 2D web page specified<span>�
+  </span>by �Target URL�, this property specifies how wide the 2D web page will
+  appear on-screen.<span>� </span>The 2D web page
+  appears as an overlay on top of the 3D window, so you may choose to obscure
+  only a portion of the 3D window with the web page if you wish.
+  <LI><B>Target Page Y overlay %</B><BR>This property represents the percentage of the height of the 3D window
+  you wish to overlay with this web page. If �Pass Clicks� is set to �No�, this
+  property is ignored.
+  <LI><B>Target Page has Toolbar</B><BR>This field also applies to the 2D web page displayed if
+  �Pass Clicks� is set to No, specified by �Target URL.� If this property is
+  set to �yes�, a simple navigation toolbar will appear on top of the 2D web
+  page. This toolbar will allow the
+  user to go home, back, forward, and to close the 2D web page, thereby
+  unobscuring the 3D window. Without a
+  toolbar, the user will have no means of dismissing the 2D web page (desirable
+  for advertising, perhaps.)
+    <LI><B>Tile Size</B><BR>Tile Size designates how many times the ad banner will tile on the surface.  The default is 0,0 which stretches the ad banner over the object (tile once).
+    <LI><B>Tile Origin</B><BR>You can change how much of the ad banner is seen and/or where on the ad banner the tiling begins by changing the Tile Origin.
+  <LI><B>Flip Alternate U</B><BR>In conjunction with the Tile Origin, Flip Alternate U flips an ad banner along its x axis (mirrors it horizontally). For example, to mirror(flip) a 468x60 ad banner horizontally (left/right) you
+would set "Flip Alternate U" to true and enter a value of 468 for the "u" or
+X coordinate of the Tile Origin, Tile Origin = (468,0).
+  <LI><B>Flip Alternate V</B><BR>In conjunction with the Tile Origin, Flip Alternate V flips an ad banner along its y axis (mirrors it vertically). For example, to mirror(flip) a 468x60 ad banner vertically (up/down) you would
+set "Flip Alternate V" to true and enter a value of 60 for the "v" or y
+coordinate of the Tile Origin, Tile Origin = (0,60).
+</UL>
+<HR>
+
+<H3><A name=WebPage></A>Web Page Wall</H3>
+<P CLASS="three">Two new objects introduced in GDK 1844, the Ad Banner and Web Page object  replace the Billboard attribute.  An Ad Banner object comes in the size of a default ad banner, 468 x 60, while a Web Page object by default comes in at 640 x 480.  Both objects display web pages on a 2D rect, allowing for web-based content to be integrated into a 3D world.</P>
+
+<H4>Specific properties of a Web Page Wall</H4>
+
+<UL CLASS="four">
+  <LI><B>From</B><BR>The x,y,z coordinates of the lower left corner of the WebPageWall.
+  <LI><B>To</B><BR>The x,y,z coordinates of the upper right corner of the WebPageWall.
+  <LI><B>Extent</B><BR>The width and height of the WebPageWall.
+  <LI><B>Wall's URL</B><BR>This is the URL that will be displayed as a texture map on
+  the WebPageWall. <b>Important Note!</b> Make sure this
+  web page does NOT USE FRAMES. There is a bug beyond our control in the
+  Internet Explorer 5 control that will not draw frames properly on pages
+  higher than 150 pixels.
+  <LI><B>Wall Page Width</B><BR>The default width of the wall is 640.  Change as appropriate.
+  <LI><B>Wall Page Height</B><BR>The default height of the wall is 480.  Change as appropriate.
+  <LI><B>Wall's Refresh Rate</B><BR>This controls how often the web-based texture is updated
+  from Internet Explorer. A value of �1 would mean that the texture would be
+  updated only when the page is initially loaded. A value of 1 would update the texture every frame of animation, and a value of 5 updates the texture every five frames. In general, a page that features a lot of
+  animation should use low numbers and pages that do not animate much or
+  animate infrequently should use high numbers or �1. Updating a web-based texture frequently can noticably affect performance, so you will need to find a good compromise between performance
+  and fluid animations.
+  <LI><B>Use Scrollbars</B><BR>If set to true, scrollbars will appear on top of the 2D WebPageWall.
+  <LI><B>Pass Clicks</B><BR>If set to Yes, the Web Page will pass any clicks on it
+  through to Internet Explorer, where they may do such things as activate
+  hyperlinks or interact with games. If
+  set to No, a click on the Web Page will launch the 2D web page specified by
+  Target URL within the UI of WorldsPlayer.
+  <LI><B>Target URL for click</B><BR>If you have specified that clicks are not passed through
+  this Web Page, a click on the Web Page is intercepted by the WorldsPlayer
+  and will cause a 2D web page to appear over the 3D window, set to the URL
+  specified in this property. This is
+  NOT the URL displayed on the WebPageWall itself. If the WebPageWall is set to pass clicks through to Internet
+  Explorer, this property will be ignored.
+  <LI><B>Target Page Size Units</B><BR>This controls whether the x and y dimensions of the target page are interpreted as a
+percentage or as pixels.
+  <LI><B>Target Page X overlay %</B><BR>If �Pass Clicks� is set to No, and a click on the Web Page
+  will launch a 2D web page specified by �Target URL�, this property specifies how wide the 2D web page will appear on-screen. The 2D web page
+  appears as an overlay on top of the 3D window, so you may choose to obscure
+  only a portion of the 3D window with the web page if you wish.
+  <LI><B>Target Page Y overlay %</B><BR>This property represents the percentage of the height of the 3D window
+  you wish to overlay with this web page. If �Pass Clicks� is set to �No�, this
+  property is ignored.
+  <LI><B>Target Page has Toolbar</B><BR>This field also applies to the 2D web page displayed if
+  �Pass Clicks� is set to No, specified by �Target URL.� If this property is
+  set to �yes�, a simple navigation toolbar will appear on top of the 2D web
+  page. This toolbar will allow the
+  user to go home, back, forward, and to close the 2D web page, thereby
+  unobscuring the 3D window. Without a
+  toolbar, the user will have no means of dismissing the 2D web page (desirable
+  for advertising, perhaps.)
+    <LI><B>Tile Size</B><BR>Tile Size designates how many times the web page will tile on the surface.  The default is 0,0 which stretches the web page over the object (tiles once).
+    <LI><B>Tile Origin</B><BR>You can change how much of the web page is seen and/or where on the web page the tiling begins by changing the Tile Origin.
+  <LI><B>Flip Alternate U<BR></B>In conjunction with the Tile Origin, Flip Alternate U flips a web page along its x axis (mirrors it horizontally). For example, to mirror(flip) a 640x480 web page horizontally (left/right) you
+would set "Flip Alternate U" to true and enter a value of 640 for the "u" or
+X coordinate of the Tile Origin, Tile Origin = (640,0).
+  <LI><B>Flip Alternate V<BR></B>In conjunction with the Tile Origin, Flip Alternate V flips a web page along its y axis (mirrors it vertically). For example, to mirror(flip) a 640x480 web page vertically (up/down) you would
+set "Flip Alternate V" to true and enter a value of 480 for the "v" or y
+coordinate of the Tile Origin, Tile Origin = (0,480).
+</UL>
+<HR>
+
+<H3><A name=VideoWall></A>Video Wall</H3>
+<P CLASS="three">A Video Wall, introduced in GDK 1844, replaces the Video Texture attribute.  It is a rect with the URL of a video attached to it, allowing for a video to be played on the rect within a 3D space.  It can be used in conjunction with the <a href="#VideoControl">VideoControl</a> action which allows the user to control the playback of the video.  <b>NOTE:</b>  When you add a Video Wall it may take a while for it to appear in the room and in the Hierarchy Tree.  This is because a default video is attached to the wall with Auto-play turned on.  The Video Wall will appear and the default video will start to play.</P>
+
+<H4>Specific properties of a Video Wall</H4>
+
+<UL CLASS="four">
+  <LI><B>From</B><BR>The x,y,z coordinates of the lower left corner of the VideoWall.
+  <LI><B>To</B><BR>The x,y,z coordinates of the upper right corner of the VideoWall.
+  <LI><B>Extent</B><BR>The width and height of the VideoWall. The default is 128x128.
+  <LI><B>Video URL</B><BR>This is the URL that will be displayed as a texture map on
+  the VideoWall.  The default video will begin playing when you add the Video Wall to a room.
+  <LI><B>Video Width</B><BR>The default width of the wall is 128.  Change as appropriate.
+  <LI><B>Video Height</B><BR>The default height of the wall is 128.  Change as appropriate.
+  <LI><B>Auto-play?</B><BR>When set to true, the video auto-plays as soon as the VideoWall object is loaded from the .world file, which is generally well before you ever see the first frame rendered
+in the world you are entering.  Finer control could be achieved through the
+use of world scripts.
+  <LI><B>Repeats for Autoplay</B><BR>If Auto-play is set to true, you can set the video to repeat forever (-1) or for a set number of times.
+    <LI><B>Tile Size</B><BR>Tile Size designates how many times the video will tile on the surface.  The default is 0,0 which stretches the video over the object (tiles once).
+    <LI><B>Tile Origin</B><BR>You can change how much of the video is seen and/or where on the video the tiling begins by changing the Tile Origin.
+  <LI><B>Flip Alternate U<BR></B>In conjunction with the Tile Origin, Flip Alternate U flips a video along its x axis (mirrors it horizontally).
+  <LI><B>Flip Alternate V<BR></B>In conjunction with the Tile Origin, Flip Alternate V flips a video along its y axis (mirrors it vertically). 
+</UL>
+	  </TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=AddinganAction></A>Adding an Action</H2>
+
+<P CLASS="two">To add an item from the Actions Library, follow these steps:</P>
+<OL CLASS="two">
+  <LI>You can apply actions to the Actions property of objects within your 3D world.  There are quite a few actions in the Actions Library - check the description of individual actions in the <A HREF="#ActionsCatalog">Actions Catalog</A> to see what types of objects to apply them to.
+  <LI>Click the Actions tab in the libraries section of WorldsShaper to see the <A HREF="#ActionsCatalog">catalog of Actions</A>.
+<LI>In the library, click on the action you want, holding down the mouse button, and drag it to the <B>Actions</B> property listed under the object that you want to hold the action.  Release the mouse button.  The action you selected is now attached to the object.
+<LI>If you would like to give your action a distinctive name (and this is a good idea if you intend to have several actions throughout your world), double-click on <B>Name</B> in the Properties Box and enter a new name in the Edit Name box.  Click OK.
+<LI>Check the description of individual actions in the <A HREF="#ActionsCatalog">Actions Catalog</A> to see how to set a particular Action's properties.
+</OL>
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=ActionsCatalog></A>Actions Catalog</H2>
+<UL CLASS="two">
+  <LI><A 
+  href="#common">Parameters 
+  common to all actions</A> 
+  <LI>Actions:
+  <TABLE><TR><TD>  <UL>
+      <LI><A 
+      href="#Wait">Wait</A> 
+	  
+	  <LI><A 
+      href="#Stdout">Stdout</A> 
+	  
+	 <LI><A 
+      href="#Sequence">Sequence</A> 
+	  
+	 <LI><A 
+      href="#Animate">Animate</A> 
+
+	  <LI><A 
+      href="#Gravity">Gravity</A> 
+	  
+	  <LI><A 
+      href="#Move">Move</A> 
+	  
+      <LI><A 
+      href="#Print">Print</A> 
+
+      <LI><A 
+      href="#Pickup">Pickup</A> 
+	  
+	 <LI><A 
+      href="#RemotePortal">RemotePortal 
+      Loading</A>
+
+	  <LI><A 
+      href="#Parallel">Parallel</A>
+	  
+      <LI><A 
+      href="#Sound">Sound</A> 
+
+      <LI><A 
+      href="#SetVisibleBumpable">SetVisibleBumpable</A> 
+
+	  <LI><A 
+      href="#Teleport">Teleport</A>
+
+      <LI><A 
+      href="#URL">URL</A> 
+
+      <LI><A 
+      href="#Talk">Talk</A> 
+
+      <LI><A 
+      href="#Dispenser">Dispenser</A> 
+	
+      	  <LI><A 
+      href="#PlaybackRecording">PlaybackRecording</A>
+	  
+	  <LI><A 
+      href="#StopRecording">StopRecording</A>
+	  
+      </LI></UL></TD>
+	  
+	  <TD VALIGN="TOP">  <UL>
+	  <LI><A 
+      href="#SetActions">The SET Actions</A> 
+      <UL>
+	  <LI><A 
+      href="#SetInteger">SetInteger</A> 
+	  
+	  <LI><A 
+      href="#SetFloat">SetFloat</A> 
+	  
+	  <LI><A 
+      href="#SetBoolean">SetBoolean</A> 
+	  
+	 <LI><A 
+      href="#SetString">SetString</A> 
+	  
+	 <LI><A 
+      href="#SetColor">SetColor</A> 
+
+	  <LI><A 
+      href="#SetPoint2">Set2DPoint</A> 
+	  
+	  <LI><A 
+      href="#SetPoint3">Set3DPoint</A> 
+	  
+      <LI><A 
+      href="#SetURL">SetURL</A> 
+
+      <LI><A 
+      href="#SelectAvatar">SelectAvatar</A> 
+	  
+      <LI><A 
+      href="#Wear">Wear</A> 
+
+      <LI><A 
+      href="#Posable">Posable</A> 
+
+	  <LI><A 
+      href="#Trade">Trade</A>
+
+      <LI><A 
+      href="#MoveCamera">MoveCamera</A> 
+
+      <LI><A 
+      href="#OpenURL">OpenURL</A> 
+
+      <LI><A 
+      href="#VideoControl">VideoControl</A> 
+	  
+	  	  <LI><A 
+      href="#NotifyScript">NotifyScript</A>
+	  
+	  <LI><A 
+      href="#CameraHeight">CameraHeight</A>
+	  
+
+
+	  
+      </LI></UL></TD>
+	  
+	  </TR></TABLE>
+	  </UL>
+<HR>
+
+<H3><A name=common></A>Parameters common to all actions</H3>
+<P CLASS="three">There are two parameters that all Actions share in common. These are:</P>
+<UL CLASS="three">
+  <LI><B>Name<BR></B>This is simply the name you choose to give the Action. Note 
+  that naming Actions with something distinctive is very important! When you 
+  have to target Sensors to Actions, you'll be presented with a long list of 
+  every Action present in that <TT>.WORLD </TT>file, potentially a very long 
+  list for a bigger project. This name also shows up in the Actions list when 
+  you double-click and edit the object. 
+  <LI><B>Trigger Now<BR></B>Trigger Now enables you to test an Action without 
+  having to go through the hassle of creating a dummy trigger and jumping back 
+  and forth between Action and Sensor, or having to move around in Properties at 
+  all. Just double-click on Trigger Now and set the Edit box to True. Your 
+  Action should fire off right then, and Trigger Now will revert to False again. 
+
+  
+  </UL>
+<HR>
+
+<H3><A name=Wait></A>Wait</H3>
+<P CLASS="three">Wait is a pretty straightforward action. You set a WaitAction property that specifies 
+how many seconds the action should wait. When triggered, all the action does is 
+start, wait that number of seconds, and then it's done. Wait is generally used 
+as part of a <A 
+href="#Sequence">Sequence</A>. </P>
+<H4>Specific properties of Wait</H4>
+<UL CLASS="four">
+  <LI><B>Duration (s)</B> <BR>Type any integer or decimal value of seconds. Note 
+  that duration values smaller than .2 might be impacted by frame rate 
+  considerations and won't reliably give the same length wait each time. 
+</LI></UL>
+<HR>
+
+<H3><A name=Stdout></A>Stdout</H3>
+<P CLASS="three">This action writes text to the "standard output", which means that if the user has a log file going, the text will appear there.  Useful for debugging.</P>
+
+
+<HR>
+
+<H3><A name=Sequence></A>Sequence</H3>
+<P CLASS="three"><A name=sq1></A>Sequence is an ordered list in which you can put other 
+actions, actually "pointers" to actions located in any object. </P>
+<UL CLASS="three">
+  <LI><A 
+  href="#sq1">Properties 
+  of a sequence</A> 
+   <LI><A 
+  href="#AddingaSequence">Adding a Sequence</A>
+  <LI><A 
+  href="#sq2">Adding 
+  actions</A> 
+  <LI><A 
+  href="#sq4">Synchronization 
+  issues</A> 
+  <LI><A href="#sq5">The 
+  Wait action</A> 
+  <LI><A 
+  href="#sq6">Editing the 
+  actions inside a sequence</A> 
+  <LI><A 
+  href="#sq7">Sequences 
+  within sequences</A> </LI></UL>
+
+<H4>Specific properties of Sequence</H4>
+<UL CLASS="four">
+  <LI><B>Components:</B> Listed beneath a SequenceAction in the Hierarchy Tree, this is a container where you put the list of actions 
+  that will be part of this sequence. 
+  <LI><B>Loop count: </B>how many times you want this sequence to run once it's 
+  triggered.
+  </LI>
+    <LI><B>Loop Infinite: </B>set to true if you want the sequence to loop indefinitely.
+  </LI></UL>
+<H4><A NAME="AddingaSequence">Adding a Sequence</A></H4>
+<OL CLASS="four"><LI>To make a sequence, right-click on the object you want to add a sequence to 
+(or click it in the Hierarchy Tree). The sequence can be just about 
+anywhere, because it will be calling actions that may or may not be contained in 
+the same object, <B>and the actions will be taking place in the objects they're 
+owned by</B>.
+<LI>Click the triangle next to your selected object in the Hierarchy Tree to reveal the deeper properties.
+<LI>From the Actions Library, click and drag a Sequence action over to Actions listed beneath your object. A new SequenceAction is now listed beneath the Actions of the selected object. 
+<LI>Double-click Name under SequenceAction Properties listed in the Properties Box.  Change the name of your sequence so that you will remember what this particular sequence does.</OL>
+
+<A name=sq2></A></P>
+<H4>Adding actions</H4>
+<P CLASS="four">To add actions to a sequence, find the sequence in the Hierarchy Tree and 
+click on its Components. This List will initially be empty. Click the Add 
+button and add previously created actions into your sequence, one at a time (when the Add to Components box comes up, click on the downward-pointing triangle to the right of the first listed action.  This will reveal a list of all the actions you have previously created). Note that you should try to add items to the 
+sequence in the exact order they will run. When you Add another action to the 
+list, it will always add to the last position, there is no insertion point! 
+However, you can Delete from any point in the List. You can overcome the 
+no-insertion-point problem slightly by careful use of Cut and Undo, because you 
+can Cut from anywhere in the list but Undo will always place the action last in 
+the list. </P>
+<A name=sq4></A>
+<H4>Synchronization issues: Multithreading</H4>
+<P CLASS="four">Another problem you might run into with sequences is that each item in the 
+sequence's Components needs to finish executing before the next item can begin. 
+This has the following unfortunate consequences: </P>
+<UL CLASS="four">
+  <LI>You shouldn't put an infinitely looping action into a sequence, because 
+  that action will never complete itself. In theory you could put an infinitely 
+  looping action as the LAST thing that happens in a sequence, but then WorldsShaper 
+  has to deal with the overhead of two things running constantly: the looping 
+  action and a sequence that it can't close. 
+  <LI>You can't use a single sequence to synchronize two things to happen at 
+  exactly the same time. For instance, if your sequence had a Move action that 
+  made a door open and then a Sound action that played the sound of a door 
+  opening, the door would open all the way, stop, and only then would the sound 
+  be played. The way around this particular problem is to have one sensor 
+  trigger two different sequences, one containing all the Sounds and one 
+  containing all the Moves. You would also have to factor in the times that the 
+  sounds and moves themselves take to figure out the ultimate timing of each 
+  sequence, especially when trying to synchronize the sequences to each other. 
+  Sometimes you won't need a sequence at all, you just need to have one sensor 
+  trigger multiple actions, in which case the actions will start as close to 
+  simultaneously as is possible. </LI></UL>
+<P><A name=sq5></A></P>
+<H4>Wait</H4>
+<P CLASS="four">Because of the multithreading issues and also for general utility, you will 
+frequently be placing Wait actions into your sequences. Wait actions are another 
+case of an action that can be owned by just about anything. A good practice is 
+to have all the wait actions for your world placed inside some easy-to-find 
+object like the first room's Actions list. Remember that you can share the same 
+wait action for several different sequences but if you change the timing by 
+double-clicking the Wait in any given sequence you'll be changing the "master", 
+not a copy. You might create a library of several commonly used units of time in 
+progressively larger steps, for example .2 seconds, 1 second, 5 seconds, 30 
+seconds. Then you can always insert 2 1-second waits to substitute for having to 
+make a whole new 2-second-long wait action from scratch someplace, and you can 
+avoid clutter in the list whenever you add an Action. </P>
+<P><A name=sq6></A></P>
+<H4>Editing actions from within a sequence</H4>
+<P CLASS="four">You can click on any action within a sequence to make changes to its properties listed in the Properties Box if you'd like. But again, remember that you are really just taking a "shortcut" to 
+where that action really exists, and if you edit an action in a sequence, the 
+changes you make will show up in every other sequence that uses that action, as 
+well as in the action's "master" back in whatever object it's owned by. However, 
+if you Delete an item from a sequence, you won't be deleting the "master", just 
+a copy, and clicking the Owner button after double-clicking an action in a 
+sequence will take you back up to the sequence, not to the action's real owner. 
+</P>
+<P><A name=sq7></A></P>
+<H4>Sequences within sequences</H4>
+<P CLASS="four">Since a sequence is itself an action, there's no reason why you can't nest 
+other sequences inside a larger sequence. Just keep in mind that the entirety of 
+the nested sequence needs to be executed before the next item in the larger 
+sequence's list can be started. And don't make the mistake of putting a sequence 
+inside itself! We make no guarantees about what will happen in this case. </P>
+<HR>
+
+<P><A name=Animate></A></P>
+<H3>Animate</H3>
+<P CLASS="three">Animate places bitmaps on an object and cycles through them in a specified 
+linear sequence. You can apply an animation to objects like walls that take a 
+Materials property for textures, but you won't be able to "animate" a Shape in 
+this way, because a Shape's textures are stored internally. If you just want to 
+move a Shape through space (or a wall for that matter), you'll want to use the 
+<A href="#Move">Move 
+action</A> instead. </P>
+<P CLASS="three">Tiling is the same as the Material that existed on the wall before you start 
+the animation. For instance, if you have tiled a wall to repeat its texture four 
+times horizontally (250,0 tiling on a 1000-wide wall) any animation you attach 
+to the wall will also tile four across. For this reason you might want to attach 
+animations to separate rects rather than to architectural walls of a room. </P>
+<H4>Specific properties of Animate</H4>
+<UL CLASS="four">
+  <LI><B>Cycle time</B> <BR>Type the total time the animation should take, in 
+  milliseconds (default is "1000" or 1 second). The display time for each frame becomes this number divided by 
+  the number of frames. 
+  <LI><B>Cycles</B> <BR>Type the number of times the animation should run once 
+  triggered. 
+    <LI><B>Infinite Loop</B> <BR>Set to true if you want the animation to loop continuously.
+  <LI><B>Frame list</B> <BR>Type a list of all the frames that make up your 
+  animation. List the relative URL of each image file (including the extension) in order with a 
+  single space between each file name. See the screenshot below for an example. 
+  You can animate .gifs (but not animated gifs), .bmps., or .bmps</LI></UL>
+  <P CLASS="three"><IMG SRC="images/framelist.gif" WIDTH=308 HEIGHT=69 BORDER=0 ALT=""></P>
+<HR>
+
+<H3><A name=Gravity></A>Gravity</H3>
+<P CLASS="three">When the Gravity action is triggered, it will pull users (their camera) to a specified point in the room.  
+There is no escaping a Gravity action - no matter where you are in a room, if you trigger it, you will move to the designated point.  When a Gravity action is applied to a wall, the user's camera will be pulled to the lower left corner of the wall (where the red dot is when the wall is selected).  Since the camera height for avatars is set at 150, the user would sink into the floor until its "eye height" was at the lower left corner.  Since this probably isn't the desired effect, what you need to do is create a copy of the wall to attach the gravity action to. For example, if you wanted the Gravity action to carry you to the center of a room, you would first make a copy of a wall. Attach the Gravity Action to the copied wall. Make the copied wall 1 pixel high and one pixel wide, and position it at 500,500,150 (assuming a default 1000x1000 room).  Now when the Gravity action is triggered, the user will be pulled to the center of the room.</P>
+
+<H4>Specific properties of Gravity:</H4>
+<P CLASS="four">Force - This number is how "fast" the user gets pulled toward the target of the gravity action. The higher the number, the more of a "tug" the user receives.  The default is set at 300.</P>
+
+<HR>
+
+<P><A name=Move></A></P>
+<H3>Move</H3>
+<UL CLASS="three">
+  <LI><A 
+  href="#MovePB">The 
+  "playback-record" method of making a Move action</A> 
+  <LI><A 
+  href="#MoveBTN">The "by 
+  the numbers" method of making a Move action</A> 
+  <LI><A 
+  href="#MoveProperties">The 
+  properties of the Move action</A> 
+  <LI><A 
+  href="#MoveTricks">Move 
+  action tips and tricks</A> </LI></UL>
+<P CLASS="three">Move replaces the old-style behaviors that don't have sensors, like Spin and 
+Post-spin, and also allows you to dynamically move objects through space. For 
+instance, you can use the Move action to spin a door rectangle on its z axis to 
+make it look like it is swinging closed, or to make a ball appear to roll across 
+the floor instead of just spinning in place. </P>
+
+<P CLASS="three">All Move actions take place around or from a point on any given object that 
+usually its bottom left corner for rects or an approximate center for a Shape. 
+But some objects that you've added, particularly default walls and 
+floors/ceilings, may already have a transform applied to them. For instance, a 
+floor is really just a wall pitched over 90 degrees, and a West wall is really 
+an East wall with a 180 degree rotation , so the initial position may not be 
+what you expect in an absolute coordinate sense. As a result, it can often take 
+some experimenting to get the Move action to do what you want. You may have to 
+flip objects upside down or turn them around to get the origin in the right 
+place for your particular move action. Look for the red dot in any given object: 
+that dot will be the origin around which move actions will take place. </P>
+<P CLASS="three">There are essentially two ways to establish a Move action: a playback/record 
+metaphor and a by-the-numbers metaphor. You can use either, but follow the 
+instructions given here carefully. </P>
+<P><A name=MovePB></A></P>
+<H4>The playback-record method</H4>
+<OL CLASS="four">
+  <LI>Right-click the object you want to move, or find it in the Hierarchy Tree. 
+  <LI>In the Hierarchy Tree, click the triangle to the left of the object to reveal its deeper properties.
+  <LI>In the Actions Library, click on <B>Move</B> and drag it to Actions listed beneath your object in the Hierarchy Tree.
+  <LI>If it's not there already, move the object to its intended <I>beginning</I> position, size, rotation etc. You 
+  can do this by: 
+  <UL CLASS="four">
+    <LI>Using the horizontal move, vertical move, scale and various spin buttons 
+    above the Properties box. 
+    <LI>Or select the object and double-click Transform listed in the Properties Box, 
+    and use the various transform boxes to move your object to its final 
+    parameters. Click OK to close the Edit Transform box. </LI></UL>
+  <LI>In the Hierarchy Tree, click the new Move action to bring up its MoveAction Properties in the Properties Box. 
+  <LI>Double-click the <B>Copy Start/End</B> property under the MoveAction Properties.  <BR><BR>
+<TABLE border=1>
+    <TBODY>
+    <TR>
+      <TD>This Property is actually a crude utility that allows you to view 
+        start and end parameters of an object's move, or save the present 
+        parameters as either the start or end of a move: <PRE>1: Snaps the object to the Move's start parameters.
+2: Snaps the object to the Move's end parameters.
+3: Records the object's current parameters as the 
+   Move's new start parameters.
+4: Records the object's current parameters as the 
+   Move's new end parameters.
+</PRE></TD></TR></TBODY></TABLE><BR>
+  <LI>Since the object is now in its starting position, type <TT>3</TT> into the Edit Copy Start/End box. Click OK.
+  <LI>Now move the object to its intended final position, size, rotation etc.
+
+  <LI>In the Hierarchy Tree, click your Move action again. 
+  <LI>Double-click the Copy Start/End property.
+  <LI>Enter <TT>4</TT> in the Edit box and click OK. Now you've saved the 
+  current parameters of the object as the final parameters for the Move. 
+  <LI>Adjust the Cycles and Cycle Time properties as necessary. <A 
+  href="#MoveCycles">Click 
+  here for more information on these properties.</A> 
+  <LI>Add a sensor that triggers your action and see if your Move behaves like 
+  you expected. If not, return to your Move action and tweak as needed. </LI></OL>
+<P><A name=MoveBTN></A></P>
+<H4>The by-the-numbers method</H4>
+<OL CLASS="four">
+  <LI>Right-click the object you want to move, or find it in the Hierarchy Tree. 
+  <LI>In the Hierarchy Tree, click the triangle to the left of the object to reveal its deeper properties.
+  <LI>In the Actions Library, click on <B>Move</B> and drag it to Actions listed beneath your object in the Hierarchy Tree.
+  <LI>Enter values for the objects intended <I>beginning</I> position, size, rotation etc. by doing the following:
+    <UL CLASS="four">
+    <LI>Double-click the Start Point property. In the Edit Start Point box, enter the X, Y, Z position you'd like the object to start at. 
+    <LI>Double-click the Start Scale property. In the Edit Start Scale box, 
+    enter the X, Y, Z values you'd like the object to begin with. 
+    <LI>Double-click the Start Spin property. In the Edit Start Spin 
+    box, enter values for one or more axes you want the object to spin around. 
+    <LI>Double-click the Start Rotation property. Enter the facing for 
+    the desired beginning rotation. </LI></UL>
+	
+  <LI>Enter values for the objects ending position, size, rotation, etc. by doing the following:
+  
+  <UL CLASS="four">
+    <LI>Double-click the Translation Extent property. In the Edit Translation 
+    Extent box, enter the X, Y, Z position you'd like the object to end at. 
+    <LI>Double-click the Scale Extent property. In the Edit Scale Extent box, 
+    enter the X, Y, Z values you'd like the object to scale during the move. 
+    <LI>Double-click the Spin Axis for Extent property. In the Edit Scale Extent 
+    box, enter values for one or more axes you want the object to spin around. 
+    <LI>Double-click the Extent Rotation Amount property. Enter the facing for 
+    the desired final rotation. </LI></UL>
+	
+  <LI>Adjust the Cycles and Cycle Time properties as necessary. <A 
+  href="#MoveCycles">Click 
+  here for more information on these properties.</A> 
+  <LI>Add a sensor that triggers your action and see if your Move behaves like 
+  you expected. If not, return to your Move action and tweak as needed. </LI></OL>
+<P><A name=MoveProperties></A></P>
+<H4>Specific properties of Move<A name=MoveCycles></A></H4>
+<UL CLASS="four">
+  <LI><B>Cycle time (in seconds)</B> <BR>Specifies how long the entire move 
+  should take from beginning to end, in seconds. WorldsShaper will interpolate frames 
+  between the start and end, so slower moves will tend to look smoother, whereas 
+  quick radical moves might look a little choppy depending on your frame rate. 
+  <LI><B>Cycles</B> <BR>Specifies how many times the Move will repeat when 
+  triggered.  If you want it to loop infinitely, set the Loop Infinite property to true (see below).
+  <LI><B>Copy Start/End 1/2:-&gt;Action-&gt;Owner 3/4: Owner-&gt;Action</B> <BR><BR>
+</UL>
+<P class="four">
+  <TABLE border=1>
+    <TBODY>
+    <TR>
+      <TD>This Property is actually a crude utility that allows you to view 
+        start and end parameters of an object's move, or save the present 
+        parameters as either the start or end of a move: <PRE>1: Snaps the object to the Move's start parameters.
+2: Snaps the object to the Move's end parameters.
+3: Records the object's current parameters as the 
+   Move's new start parameters.
+4: Records the object's current parameters as the 
+   Move's new end parameters.
+</PRE></TD></TR></TBODY></TABLE></P>
+<UL CLASS="four">
+  <LI><B>Translation Extent</B> <BR>The final point position of an object's 
+  Move. 
+  <LI><B>Scale Extent</B> <BR>The final scale along each axis for an object's 
+  Move. 
+  <LI><B>Spin Axis for Extent</B> <BR>The axes about which any spin takes place. 
+  Any value between 0 and 1 for any axis "makes sense" though other values are 
+  accepted. 
+  <LI><B>Extent Rotation Amount</B> <BR>The final rotation for an object's Move. 
+
+  <LI><B>Start Point</B> <BR>The start point position of an object's Move. 
+  <LI><B>Start Scale <BR></B>The start scale along each axis for an object. 
+  <LI><B>Start Spin</B> <BR>The start spin position along each axis for an 
+  object. 
+  <LI><B>Start Rotation <BR></B>The initial rotation for an object's Move. 
+  <LI><B>Loop Infinite</B> <BR>Set to true if you want the Move action to loop infinitely once triggered.
+</LI></UL>
+<P><A name=MoveTricks></A></P>
+<H4>Move tips and tricks</H4>
+<UL CLASS="four">
+  <LI>Note that if you want the object to move back to its start point instead 
+  of jumping back there, you will have to write a whole separate Move. Moves are 
+  point-to-point, and to reproduce a complicated series of Moves you'll need to 
+  create a <A 
+  href="#Sequence">Sequence</A>. 
+
+  <LI>Use the "1" and "2" options in <I>Copy Start/End 1/2:-&gt;Action-&gt;Owner 
+  3/4: Owner-&gt;Action </I>to view start and end positions while you're editing 
+  the Move action. That way you can avoid having to re-trigger all the time to 
+  see what it does. </LI></UL>
+<HR>
+
+<H3><A name=Print></A>Print</H3>
+<P CLASS="three">Print outputs text to WorldsShaper's text window, the same area where chat messages 
+show up if you're hooked up to a multiuser server. A practical use for this is 
+to combine Print with a Startup sensor to give your user a welcoming message 
+when they enter the world. The Print action can be attached to any object within a room 
+or within a room's Actions list. </P>
+<H4>Specific properties of Print</H4>
+<UL CLASS="four">
+  <LI><B>Text Out</B> <BR>Type any text you want output to the message window. 
+  Text will all appear on one line; you cannot force a line break. Use separate 
+  Print commands in a Sequence to simulate line breaks if needed. </LI></UL>
+<HR>
+
+<H3><A name=Pickup></A>Pickup</H3>
+<P CLASS="three">This action is currently under development and does not work.</P>
+
+<HR>
+
+<P><A name=RemotePortal></A></P>
+<H3>RemotePortal Loading (RPAction)</H3>
+<P CLASS="three">A RemotePortal action is adding to portals that will be connecting worlds. To create a new RPAction, 
+you must place it in the Actions List of the portal itself, not in the room or 
+other objects in the room. Most often a SameRoom sensor is used to trigger the RemotePortal action. You could however use a
+Startup or other sensor to change the point in time where the user will "take 
+the hit" of having to stop and load a <TT>.WORLD</TT> file into memory, 
+potentially as a download. Or you could put the SameRoom Sensor in a different 
+room, for instance to have the world behind the RemotePortal start loading while 
+you're still two or three rooms away, rather than when you're already in the 
+room. </P>
+<P CLASS="three"><B>Note: </B>The major modifiable characteristics of a RemotePortal Loading 
+action are which portal it's placed in and what type of sensor triggers it. </P>
+<HR>
+
+<H3><A name=Parallel></A>Parallel</H3>
+<P CLASS="three">This action is currently under development and does not work.</P>  
+
+<P CLASS="three">Activating a Parallel action will activate all of its targets simultaneously, allowing you to set several sequences into motion at once.</P>
+<HR>
+
+
+<P><A name=Sound></A></P>
+<H3>Sound</H3>
+
+<P CLASS="three">In a Sound action, you may specify a sound in any number of formats.</P>
+ 
+<P CLASS="three">If you enter a URL to a Sound ending with .wav or .mid, then that WAV or MIDI file will be played.  These types of files may point to files on
+the user's local hard drive bundled with the world.</P>
+ 
+<P CLASS="three">For URL's ending with any other extension, the URL will be passed as-is to Windows Media Player, which will attempt to play the URL
+given.  You could in this manner point to streaming audio for example.  Unfortunately, since Windows Media Player can't interpret Worlds'
+home:/ URL's, you can't specify local files in a sound action other than wav or midi files, since Windows Media Player doesn't know where
+the world was installed on the user's hard drive.  This is a known limitation that we hope to resolve, in order to allow things like playing
+MP3 files and other new audio formats that come along.</P>
+ 
+<P CLASS="three">The Music Manager (in the Options menu of the WorldsPlayer Interface), used primarily for room-based background music, works similarly.  .WAV and .MID files are processed by Worlds
+through Windows' Media Control Interface. Any other file extensions are passed to Windows Media Player, which will play the sound if it
+can.</P>
+ 
+<P CLASS="three">Note that only the Windows Media Player "engine" is utilized by Worlds; specifying a URL to be handled by WMP will not result in the
+Windows Media Player application being launched or displayed; it will simply play whatever audio you have sent it in the background.</P>
+<UL CLASS="three">
+  <LI><A 
+  href="#so1">Properties 
+  of a sound</A> 
+  <LI><A 
+  href="#so2">Allowed 
+  sound types</A> 
+  </UL>
+<H4><A name=so1></A>Specific properties of Sound</H4>
+<UL CLASS="four">
+  <LI><B>Sound File URL: </B>Type the file location of your sound here, 
+  <B><I>relative to the WorldsShaper root</I></B>. You can also give absolute paths 
+  like <TT>C:\sounds\loudsound.wav</TT>. 
+  <LI><B>Max Volume:</B> This is set to a default of 1. You can think of 1 being 
+  about 100%, but since sound volumes are always variable depending on speakers, 
+  volume of the source sound and other intangibles, you should experiment with 
+  different levels here to get the desired effect. You can set Max Volume very 
+  high, to numbers like 500 or more, but you are risking blowing out your 
+  speakers if this sound gets triggered while you are close by, or at least 
+  you'll get a nasty surprise! Ideally this should be set below 1.0, otherwise 
+  thre is the potential for distortion. If your sound is still too low-level try 
+  raising the level in the soundfile itself by editing the<TT> .WAV</TT> file. 
+  If you don't have a good <TT>.WAV</TT> editor, <A 
+  href="http://www.davecentral.com/audedit.html">check out this site</A>. 
+  <LI><B>Stop Distance: </B>Defines the range in which the sound can be heard. 
+  If Attenuate With Distance is set to True (the default), the sound will be 
+  maximum volume when you are standing next to it, and the sound will fall off 
+  gradually as you move away. At the Stop Distance, the sound level will finally 
+  be zero. The attenuation is linear relative to distance from the object. 
+  <LI><B>Times to Repeat:</B>Equivalent to the Loop property of many other 
+  actions. Once triggered, this sound will play that many times in a row. 
+  Setting to -1 will make the sound loop endlessly until you exit the World. 
+  <LI><B>Attenuate with Distance: </B>Can be set to True or False. If you set it 
+  to False, the sound won't fall off as you move away but will cut off abruptly 
+  at the Stop Distance. 
+  <LI><B>Do panning: </B>If Do Panning is set to True, the sound will be louder 
+  through the right speaker if it's off to your right, louder in the left if 
+  it's left of you, and that sound will generally behave "in stereo". If Do 
+  Panning is set to False, that sound will be "mono" and won't change relatively 
+  left or right, but will diminish with distance to the same degree in both 
+  speakers if you set Attenuate with Distance to True. 
+  <LI><B>Room Hops til sound dies<BR></B>Room Hops let you "carry" a sound with 
+  you from room to room as you pass through portals. Each number above one 
+  carries the sound through that many rooms; if you set it to 2, you can hear 
+  the sound in two rooms, after having passed through one portal. If you go 
+  through a second portal, into a third room, the sound stops. The volume falls 
+  off with distance from the original sound in each case, by two different 
+  algorithms (see below). Also make sure to read about <A 
+  href="#Limitations">limitations 
+  of using room hopping</A>. 
+  <LI><B>Door based audibility<BR></B>Can be set to True or False. Sounds heard 
+  via room hopping can either be handled as if they had to go the "long way" 
+  through the door in order to be heard (Door Based Audibility = True), or if 
+  they went the "short way", as if whatever walls the rooms might have had in 
+  between don't block out sound (Door Based Audibility = False). This affects 
+  the volume you will hear the sound at because the two distances will typically 
+  result in two different proximity-based volume levels. See the diagram below: 
+  <BR>The red line indicates a distance path for Door Based Audibility = True, 
+  the blue line is a distance path for Door Based Audibility = False. <B>Note: </B>for Door Based Audibility = 
+  False, the two rooms are lined up against each other so that the geographies 
+  make relative sense, based on which portal you entered from. A side effect is 
+  if you have multiple room hops between two rooms connected to each other by 
+  more than one portal things can get a littlke strange. </LI></UL>
+<H4>Allowed sound types</H4>
+<UL class="four">
+  <LI><B><TT>.WAV</TT></B><B> files: </B> The 
+  <TT>.WAV</TT> format is a versatile PCM format that can accept a variety of 
+  sample rates and is a pure representation of the sound that does not suffer 
+  from compression glitches. The actual samplerate and bitdepth that can be 
+  played ultimately depends on the sound card that each user has in their 
+  machine, but there are safe choices that you can make which almost all modern 
+  sound cards can successfully play back: 
+  <LI><PRE>44.1 kHz 16 bit
+44.1 kHz 8 bit
+22.05 kHz 16 bit
+22.05 kHz 8 bit
+11.025 kHz 16 bit
+11.025 kHz 8 bit
+</PRE>
+  <LI><B>MIDI: </B>General MIDI is a blanket term for a <TT>.MID</TT> file that 
+  stores a MIDI sequence intended for playback on the built-in synthesizers of a 
+  computer's soundcards. Voicing, quality, and the individual sounds of each 
+  MIDI instrument are determined entirely locally by the soundcard, so a typical 
+  General MIDI sequence needs to be finessed for a variety of common soundcards 
+  and tested on different cards and platforms. You must use the <TT>.MID</TT> 
+  extension for MIDI file URL's. 
+  </UL>
+
+<HR>
+
+
+
+<P><A name=SetVisibleBumpable></A></P>
+<H3>SetVisibleBumpable</H3>
+<P CLASS="three">Modifies the Visible and Bumpable property of an object "on the fly" in 
+response to a sensor. After you trigger a SetVisibleBumpable action and then 
+look at the object's Visible and Bumpable properties, you'll see that they've 
+been switched in response to the action and will remain that way until you edit 
+them by hand or set off another action that changes them back. </P>
+<H4>Specific properties of SetVisibleBumpable</H4>
+<UL class="four">
+  <LI><B>Target Bumpable</B> <BR>Set to No (false) to be able to pass through 
+  the object and disable any Bump sensors it contains. 
+  <LI><B>Target Visible</B> <BR>Set to No (false) to make the object invisible. 
+  </LI></UL>
+<HR>
+
+<H3><A name=Teleport></A>Teleport</H3>
+<P CLASS="three">When triggered, the Teleport action causes the user to be teleported to a designated room or world. After adding a Teleport action to an object, go to the room or world where you want the user to be teleported.  Find the spot where you want them to land and stand there.  Use the WorldsMark/Change Location option to see the URL of your current position (See image below).  Copy the full URL and return to the object that has your teleport action attached to it.  Use the various parts of the copied URL to set the Teleport properties (see examples next to each property listed below).</P>
+<P CLASS="three"><IMG SRC="images/changelocation2.gif" WIDTH=541 HEIGHT=31 BORDER=0 ALT=""></P>
+<H4>Specific properties of Teleport</H4>
+<UL class="four">
+  <LI><B>X,Y,Z</B> <BR>Specifies where in a room the user will land. (In the Change Location URL, the xyz coordinates come after the "@" symbol, in the above example: <TT>3127.0, 134.0, 150.0</TT>)</LI>
+  <LI><B>Dir</B> <BR>Enter 0 - 360 to specify the direction the user will face.  (In the Change Location URL, the direction number comes after the xyz coordinates, in the above example: <TT>322.0</TT>)</LI>
+   <LI><B>Room Name</B> <BR>Specifies the Room the user will land in. (In the Change Location URL, the Room Name comes after the "#" symbol, in the above example: <TT>Reception</TT>)</LI>
+   <LI><B>World URL</B> <BR>Specifies the World the user will land in. (In the Change Location URL, the World URL is the part of the URL before the "#", in the above example: <TT>home:GroundZero/GroundZero.world</TT>)</LI>
+  <LI><B>Use Default Coordinates</B> <BR>If true, the user will land in the default "landing spot" in a room.  All other "position" properties (X,Y,Z etc.) will be overridden if this is set to true.</LI>
+  <LI><B>Dimension Name</B> <BR>Not currently used.  A dimension is basically a copy of a room that occupies the same "space" but is physically a different room.  Currently dimensions are created when the capacity of the original room reaches a maximum.  </LI>
+  <LI><B>Show dialog</B> <BR>The default for this is "true".  When a user is teleported to another world, a small dialog box comes up that says, "Hang On! Teleporting..." with the option to cancel the process.  If you do not want this dialogue box to pop up when your Teleport action is triggered, set this property to false.</LI>
+</UL>
+<HR>
+
+<H3><A name=URL></A>URL (SendURL)</H3>
+<P CLASS="three">URL allows you to launch web pages in response to the triggering event. The default browser used by WorldsPlayer is Internet Explorer.</P>
+<H4>Specific properties of URL</H4>
+<UL class="four">
+  <LI><B>Destination</B> <BR>Type the URL of the desired web page location here. 
+  Will accept all the common protocols like http, ftp, mailto etc. </LI>
+  <LI><B>Description</B> <BR>A default property of SendURL is that a dialogue box is displayed when a SendURL action is triggered.  It's a small pop-up box titled "Browse?" that says "Would you like more information?".  The user is given options to click "Yes" or "No".  If you want the dialogue box to say something else, in the Description property type whatever text you would like.  When a description is entered into this property, the options in the pop-up window will change to "OK" and "Cancel".</LI>
+  <LI><B>Destination Override</B> <BR>This property is not generally used.  It currently is in use only with the world called Hang. Destination Override is used when an Override World has been designated.</LI>
+<LI><B>Override World</B> <BR>This property is not generally used. It currently is in use only with the world called Hang. An Override World property might be used if a world exists on two servers and certain properties of the world change depending on which server a user is logged in to.</LI>
+<LI><B>Send User Info (auto-login)</B> <BR>If set to true, this will log the user in to the requested page using their Worlds user information. If set to true, another property appears below this one:</LI>
+<LI><B>CGI uses GET instead of POST</B> <BR>This property appears only if Send User Info is set to true.  This property designates whether the Send User Info is sent using the cgi command GET or POST.
+</LI>
+  <LI><B>Display Dialogue Box</B> <BR>Change this to false if you do not want a dialogue box to pop-up before launching the URL.</LI>
+<LI><B>Cancel only</B> <BR>Cancels the dialog allowing nothing to happen.  Not generally used.</LI>
+ </UL>
+<HR>
+
+<H3><A name=Talk></A>Talk</H3>
+<P CLASS="three">Talk is another way that you can attach triggerable text messages to an 
+object. But this time the talk will appear to be coming from the username who 
+created the action in the object rather than just appearing in the interface, 
+and it requires that anyone receiving a Talk action be online (Print does 
+not).</P>
+<HR>
+
+
+<H3><A name=Dispenser></A>Dispenser</H3>
+<P CLASS="three">Currently under development.  This action does not work at this time.</P>
+
+<HR>
+
+<H3><A NAME="PlaybackRecording">Playback Recording</A></H3>
+<P CLASS="three">New actions have been added to WorldsShaper as of revision 1830 to control the new Recorder feature. With these actions, you could record
+"3D cutscenes" and play them back in response to some trigger in the world... for example, a cheat button in a puzzle could play back a
+recording of a user solving the puzzle. </P>
+ 
+
+<P CLASS="three">The only property of the <B>Playback Recording</B> action is the "FileName", which should be a URL to the recording file you wish to play back.</P>
+
+<HR>
+
+<H3><A NAME="StopRecording">Stop Recording</A></H3>
+<P CLASS="three">This action, which has no properties, will stop any currently playing recording (See Playback Recording above).</P>
+
+
+<HR>
+
+<H3><A NAME="SetActions">The SET Actions</A></H3>
+<P CLASS="three">These actions alter the properties of another object.  As an example, if you wanted to let the user select
+     the force on a Gravity Action, you could set up 2 buttons that have a SetInteger Action (since Force is an Integer) on them with
+     different settings and with the Gravity Action as a target.  Click one and you go fast, click the other and you go slow.</P>
+
+<H4>Specific properties of the SET actions</H4>
+<UL class="four">
+  <LI><B>Set To</B> <BR>Set To tells the action what you want to set the target to.  For example, if you want to
+set an Integer value to 3, put a 3 here.
+
+</LI>
+  <LI><B>Duration</B> <BR>The Duration property will change the value you set over time. For example, if
+an integer starts at 10 and goes to 100, you could give it a duration of 9
+seconds so that it goes smoothly.  SetString and SetBoolean don't have this
+property because you can't scale them over time.</LI>
+<LI><B>Target, Target Room, Target Name, Property Name, Use Parameter, Parameter Name</B> <BR>These are all used to select the target attribute to be changed by the
+SetXXXAction.  The target is chosen through WorldsShaper either by room and object name, or by selecting the target object from a list of objects.  If the name is present, then the object is searched for using the name (room defaults to the action's room).  If the name is not present, or if the object was not found, then the selection from the list of objects is used. If the object hasn't been chosen in any way, return the object that this action is attached to.</LI>
+ </UL>
+<H4><A NAME="SetInteger">SetInteger</A></H4>
+<P CLASS="four">This action alters any property of an object that is an integer.</P>
+
+
+<H4><A NAME="SetFloat">SetFloat</A></H4>
+<P CLASS="four">This action alters any property of an object that is a floating-point number (one that can have a decimal value).</P>
+
+
+<H4><A NAME="SetBoolean">SetBoolean</A></H4>
+<P CLASS="four">This action alters any property of an object that can be set to true or false.</P>
+
+
+<H4><A NAME="SetString">SetString</A></H4>
+<P CLASS="four">This action alters any property of an object that is a string (of text).</P>
+
+
+<H4><A NAME="SetColor">SetColor</A></H4>
+<P CLASS="four">This action alters any property of an object that is an RGB value.</P>
+
+
+<H4><A NAME="SetPoint2">Set2DPoint</A></H4>
+<P CLASS="four">This action alters any property of an object that is a 2-dimensional point in space.</P>
+
+
+<H4><A NAME="SetPoint3">Set3DPoint</A></H4>
+<P CLASS="four">This action alters any property of an object that is a 3-dimensional point in space.</P>
+
+
+<H4><A NAME="SetURL">SetURL</A></H4>
+<P CLASS="four">Under development.</P>
+<HR>
+
+<H3><A NAME="SelectAvatar">SelectAvatar</A></H3>
+<P CLASS="three">When a Select Avatar action is applied to an object and then triggered, the user is presented with a dialogue box that asks "Change avatar to (specified avatar)?". If the user selects "yes", their avatar changes to the specified avatar.</P>
+
+<H4>Specific properties of Select Avatar</H4>
+<UL class="four">
+  <LI><B>Avatar URL</B> <BR>You'll need to specify which avatar you want the user to select.  Check the list of avatars available in the VIP/Change Avatar menu.  In the Avatar URL edit box, type:<BR>avatar:avatarname.rwg<BR>where "avatarname" is the name of the avatar you want. All the articulated avatars are .rwg files.</LI>
+  <LI><B>Display Dialogue Box</B> <BR>The default for this property is "true" - when the user triggers a Select Avatar action, a dialogue box comes up which asks "Change avatar to (avatar name)?"  with the option to click yes or no.  If you don't want the user to see the dialogue box (and therefore to change their avatar without asking them) then in the Display Dialogue Box edit box, select "Don't ask".  Change the property back to "Ask user to ok choice" if you want the dialogue box to appear. </LI>
+<LI><B>Cancel only</B> <BR>Cancels the dialog allowing nothing to happen.  Not generally used.</LI>
+ </UL>
+<HR>
+
+<H3><A NAME="Wear">Wear</A></H3>
+<P CLASS="three">This action is used in the creation of a "Wear Wall" (e.g. in the Gallery of Metamorphics). To learn how to create a Wear Wall, see the <a href="#CreatingWearWall">How to Create a Wear Wall</a> section of this document.</P>
+<HR>
+
+<H3><A NAME="Posable">Posable</A></H3>
+<P CLASS="three">The Posable action allows you to assign triggerable actions to a "bot" or avatar that you have placed within a world.  You can only use the actions that a particular avatar already possesses - see the Actions list of each avatar. For example, if you have the avatar Charlie in your world, you can assign the following Posable actions to him: Wave, Yes, No, Happy, Upset, GetLost, Look, Flip, Dance, Rocknroll, Macarena, Pirouette, Twirl, Achoo, Bow, and Sleep.  If you assign a Move action (make it move from point A to point B) to an avatar you have placed in a world, the avatar will automatically use a walking action while in motion.</P>
+
+<P CLASS="three">To assign a Posable action, you will first need to add an avatar  (<B>Articulated</B> object) to your world.  See <A HREF="#Articulated">Articulated</A> under <A HREF="#ObjectCatalog">Object Catalog</A>.  You then add the Posable action to the avatar (listed as PosableShape in the Hierarchy Tree) and some kind of sensor to trigger the Posable action.</P>
+
+<P CLASS="three"><B>NOTE:</B> At this time, Posable actions will only run through the specified action once (you cannot loop them) and they also cannot be added to a Sequence action.</P>
+
+<H4>Specific properties of Posable</H4>
+<UL class="four">
+  <LI><B>Action</B> <BR>The default for the Action property is "wave".  If you want the avatar to do any other action when triggered, type in the name of an action (see your particular avatars actions list) into the Edit Action box.</LI>
+
+ </UL>
+<HR>
+
+<H3><A NAME="Trade">Trade</A></H3>
+<P class="three">This action is currently under development.</P>
+
+<HR>
+
+<H3><A NAME="MoveCamera">MoveCamera</A></H3>
+<P CLASS="three">This is a new action that is still under development.  It is an action that would affect whatever camera triggers it.  Designed for events like "fly-throughs" of a world.</P>
+<HR>
+
+<H3><A NAME="OpenURL">OpenURL</A></H3>
+<P CLASS="three">The OpenURL action opens a 2D browser window <I>within</I> the 3D chat window, not as a separate window.  This 2D browser has a simple toolbar (back, forward, stop, refresh, home and back to 3D). The 2D window is anchored at the lower right corner of the 3D viewing window, so if you specify the width and height of the OpenURL action to be smaller than the 3D window, the resulting 2D browser window sits in the lower right corner of the 3D viewer.</P>
+
+<H4>Specific properties of OpenURL</H4>
+<UL class="four">
+  <LI><B>Target URL</B> <BR>The URL of the page you would like to display</LI>
+    <LI><B>X Overlay % or width</B> <BR>Default is 100, or 100% of the width of the 3D viewer window. You can change this percentage, however don't make it bigger than 100 or make it too small - if you can't see the "back to 3D" button on the 2D browser window when it's open, you can't close the window! If you want to use pixels to measure the width (instead of a percentage), enter the width in pixels and change the Fixed Size property to "Yes - pixels specified".</LI>
+	  <LI><B>Y Overlay % or height</B> <BR>Default is 100, or 100% of the height of the 3D viewer window. You can change this percentage, however don't make it bigger than 100 or make it too small - if you can't see the "back to 3D" button on the 2D browser window when it's open, you can't close the window! If you want to use pixels to measure the width (instead of a percentage), enter the height in pixels and change the Fixed Size property to "Yes - pixels specified".</LI>
+	    <LI><B>Has Toolbar</B> <BR>Set this to false if you don't want a toolbar to appear on the 2D browser window.  If you do this however, the user can't close the 2D window.</LI>
+		  <LI><B>Fixed Size</B> <BR>The default is false, which means that whatever numbers you enter in the X Overlay and Y Overlay properties are <I>percentages</I> of the 3D viewing window.</LI>
+If you want to specify pixels for the width and height of the 2D browser window, set this property to true (choose "Yes - pixels specified") and use number of pixels for the width (X Overlay) and height (Y Overlay).
+ </UL>
+<HR>
+
+<H3><A NAME="VideoControl">VideoControl</A></H3>
+<P CLASS="three">These controls are used with a <A HREF="#VideoWall">VideoWall</A> that will play an .asf (video) file on a rect. The VideoControl actions (one for on, one for off) must be attached to the rect that will have the video on it.   For an example, see the TV above the counter in the Burkittsville Diner (BlairWitch World).</P>
+
+<H4>Specific properties of VideoControl</H4>
+<UL class="four">
+  <LI><B>1=Play, 2=Stop</B> <BR>For a control that starts the video, set this property to 1.  For a control that stops the video, set this property to 2.</LI>
+<LI><B>Repeat count</B> <BR>Used when the VideoControl is set to "Play". Set the Repeat count to -1 for an infinite loop or an integer to designate the number of times the video repeats.</LI>
+ </UL>
+<HR>
+
+<H3><A NAME="NotifyScript">NotifyScript</A></H3>
+
+
+<P CLASS="three">This action only used in Worlds.com produced worlds.</P>
+
+
+<HR>
+
+
+<H3><A NAME="CameraHeight">CameraHeight</A></H3>
+<P CLASS="three">When triggered, the Camera Height action causes the camera of the user to change to the specified height. If the user is in a third person mode (shoulder, overhead, etc.) the camera changes relative to it's current height and angle.</P>
+
+<H4>Specific properties of CameraHeight</H4>
+<UL class="four">
+  <LI><B>New Eye Height</B> <BR>When the Camera Height action is triggered, this will be the new height of the camera (the avatar's eye height).</LI>
+    
+ </UL>
+ 
+
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H3><A name=AddingaBehavior></A>Adding a Behavior</H3>
+
+<P CLASS="three">To add an item from the Behaviors Library, follow these steps:</P>
+<OL class="three">
+  <LI>Currently most the Behaviors are actually sensors that you use to trigger actions (see steps below).  There are a few Behaviors that actually effect an object - check the description of individual behaviors in the <A HREF="#BehaviorsCatalog">Behaviors Catalog</A> to see what types of objects to apply them to.
+  <LI>Click the Behaviors tab in the libraries section of WorldsShaper to see the <A HREF="#BehaviorsCatalog">catalog of Behaviors</A>.
+<LI>In the library, click on the behavior you want, holding down the mouse button, and drag it to the <B>Event Handler</B> property listed under the object that you want to hold the behavior.  Release the mouse button.  The behavior you selected is now attached to the object.
+<LI>If you would like to give your behavior a distinctive name (and this is a good idea if you intend to have several behaviors throughout your world), double-click on <B>Name</B> in the Properties Box and enter a new name in the Edit Name box.  Click OK.
+<LI>Check the description of individual behaviors in the <A HREF="#BehaviorsCatalog">Behaviors Catalog</A> to see how to set a particular behavior's properties.
+
+<H4><A name=AddingaSensor></A>Adding a Sensor</H4>
+<P CLASS="four">Anytime you add an Action to a room, you will need a Sensor (trigger) to initiate the Action.  Below are the steps for adding a Sensor.</P>
+<OL class="four">
+  <LI>Click the Behaviors tab in the libraries section of WorldsShaper to see which sensor you want to add.
+<LI>In the Behaviors Library, click on the sensor you want, holding down the mouse button, and drag it to the <B>Event Handler</B> property listed under the object that you want to hold the sensor.  Release the mouse button.  The sensor you selected is now attached to the object.
+<LI>If you would like to give your sensor a distinctive name (and this is a good idea if you intend to have several sensors throughout your world), double-click on <B>Name</B> in the Properties Box and enter a new name in the Edit Name box.  Click OK.
+<LI>In the Hierarchy Tree, click on the triangle to the left of the Sensor to reveal the Targets property.
+<LI>Click on Targets to select it.
+<LI>Click the Add button to the right of the Properties Box.  A window comes up with a list of all the actions you have in your world.
+<LI>Select which action you would like this sensor to trigger, and click OK.  The action is now listed beneath the Sensor's  Targets in the Hierarchy Tree.
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD><A name=SensorCatalog></A>
+<H2><A name=BehaviorsCatalog></A>Behaviors Catalog</H2>
+ 
+<TABLE>
+<TR><TD>    <UL class="two"><LI>The Sensors<UL class="two">
+      <LI><A 
+      href="#ClickS">Click</A> 
+
+      <LI><A 
+      href="#BumpS">Bump</A> 
+
+      <LI><A 
+      href="#SameRoomS">SameRoom</A> 
+
+      <LI><A 
+      href="#DifferentRoomS">DifferentRoom</A> 
+
+      <LI><A 
+      href="#StartupS">Startup</A> 
+	  
+	    <LI><A 
+      href="#ProximityS">Proximity</A> 
+      </LI></UL></UL></TD>
+	  
+	  <TD>    <BR><UL class="two">
+      <LI><A 
+      href="#Spin">Spin</A> 
+
+      <LI><A 
+      href="#PostSpin">Post-Spin</A> 
+
+      <LI><A 
+      href="#Velocity">Velocity</A> 
+
+      <LI><A 
+      href="#BuildStairs">Build Stairs</A> 
+
+      <LI><A 
+      href="#BuildRamp">Build Ramp</A> 
+	  
+	    <LI><A 
+      href="#MoveandRoll">Move & Roll</A> 
+      </LI></UL></TD>
+	  
+	  </TR></TABLE>
+
+  <LI><A 
+  href="#portaltrigger">Using 
+  a Portal as an invisible but bumpable trigger</A> </LI></UL>
+  <HR><A NAME="Sensors"></A>
+<H3><B>Click Sensor</B></H3>
+
+  <P CLASS="three">A Click Sensor triggers its target whenever the user clicks anywhere on the 
+  object's bounding box. There are several parameters you can adjust in addition 
+  to the name: Left Button, Right Button, Center Button and Wait for Upclick. 
+  Setting any of the first three to True enables that type of mouse-click to 
+  trigger the target action. If you set multiple buttons to True, the 
+  relationship is an OR relationship, as in either the left or right button 
+  could trigger the action, does not require both to be pressed together. Wait 
+  for Upclick won't perform the target action until the depressed mouse button 
+  is released (applies to any enabled mouse button).</P>
+  
+<H4>Click sensor limitations and considerations</H4>
+<UL class="four">
+  <LI>If an object has been declared to be Invisible, you cannot click it, so an 
+  invisible object 's click sensor will be inactive until that object becomes 
+  visible again. 
+  <LI>Note that a lot of mouse-handling information is affected by an 
+  individual's Windows setup. If there's too much time between downclick and 
+  upclick, WorldsShaper won't even register the upclick, so use Wait for Upclick=True 
+  with caution. 
+  <LI>If you're actively building a world, right-clicking an object will always 
+  bring up the properties box, in addition to whatever click sensor activity you 
+  may have assigned. This limits the usefulness of right-click triggering until 
+  you have disabled WorldsShaper functionality. 
+  <LI>You can left-click through portals, but you can't right-click through 
+  them, because you will be selecting the portal and opening its Properties box. 
+
+  <LI>Many objects have bounding boxes that are shaped differently than you 
+  might expect, and it is the bounding box that detects being clicked. The 
+  bounding box can be viewed when you right-click an object; it's the thin white 
+  rectangle that appears around the object. In particular, Shapes 
+  have bounding boxes that can extend well out from the visible portion of the 
+  object. </LI></UL>
+  
+  <HR>
+<H3><A name=BumpS></A>Bump</H3>
+
+  <P CLASS="three">Bump triggers its target action whenever the user bumps into that object. 
+  The definition of what it means to be bumped for each object is handled by its 
+  bump calculator. For a Rect like a wall, that pretty much corresponds to how 
+  the bounding box appears when you right-click it. For a Shape, it's an 
+  approximate and slightly larger box that goes completely around the Shape and 
+  always faces your avatar as a perpendicular vertical plane.</P>
+  <P CLASS="three">For almost all objects except a Portal, the bump calculator also performs 
+  collision detection, meaning that you can bump into that object but you cannot 
+  penetrate it. Bump calculation only affects the relationship between your 
+  avatar and objects, not objects and other objects. You can superimpose two 
+  objects when you're building them and neither one will care. You can turn off 
+  all collision detection and bumpability in an object, and that will enable you 
+  to walk right through it, but it will also disable any Bump sensor that object 
+  may contain.</P>
+  <P CLASS="three">Portals do bump calculation, but in a different way. If you bump (pass 
+  through) a portal, all sorts of things go on in the background where WorldsShaper 
+  removes your avatar from the room you came from and adds it to the new room. 
+  This happens by default, and you don't even see a Bump trigger inside a portal 
+  that's involved in making this happen. But a portal is unique in that it 
+  registers a Bump event <I>yet still allows an avatar to walk through it.</I> 
+  You can use this feature to your advantage by adding a Bump sensor to the 
+  portal and using portals as invisible "trip-wire" triggers. See the section on <A HREF="#portaltrigger">using 
+  a Portal as an invisible but bumpable trigger</A>.</P>
+  
+  <H4>Bump limitations and considerations</H4>
+<UL class="four">
+  <LI>Note that if you pass through a Rect from its non-drawing side, you will 
+  not produce a Bump event. 
+  <LI>If you bash into a wall, there is no built-in rebound. If your avatar is 
+  stuck to a wall that has a Bump trigger, that wall will continue to send Bump 
+  events each frame until you back away from the wall. 
+  <LI>As with the Click sensor, the area that produces a Bump event from a Shape 
+ can often be much larger than the Shape appears to be. 
+  <LI>Bump events are actually caused by the intersection of your avatar's bump 
+  calculator with any other object's bump calculator. Your own avatar has a 
+  box-shaped bump calculator much like a Shape does. In the vertical (z) 
+  direction, with a default avatar and the default camera height of 120, your 
+  avatar will produce Bump events in objects above z=30 and below z=140. Objects 
+  less than 30 in height don't register bump events because otherwise you 
+  couldn't properly use stairs. Objects whose bottoms are above z = 140 are 
+  considered to be "on the ceiling" and don't impede your forward progress. Your 
+  default avatar is considered to be approximately 70 WorldsShaper units wide and deep, 
+  though you can sometimes squeeze through gaps as small as 60 wide depending on 
+  your facing relative to blocking objects. 
+  <LI>The above does not hold true for portals. You do not trigger a portal Bump 
+  event or make it swap you from one room to the next, until your avatar's 
+  center intersects the portal plane. </LI></UL>
+  
+  <H4><A name=portaltrigger></A>Using a portal as an invisible but bumpable 
+trigger</H4>
+<P CLASS="four">The Bump trigger only 
+works when the object is bumpable, and when you make something unbumpable such 
+that you can pass right through it, the Bump sensor no longer registers a 
+BumpEvent and the trigger does nothing! </P>
+<P CLASS="four">There's a way around this, particularly 
+for triggering doors so that they open while still in your viewpoint instead of 
+slamming in your face. The only objects that will register a Bump event and 
+still allow people to pass through are Portals. Portals have two other important 
+advantages as trigger objects. They are unidirectional, so you can set up pairs 
+of portals to trigger different actions on the way in or out of a room. They can 
+also be set to invisible, so until you select them you'll never know they are 
+there. </P>
+<P CLASS="four">The portals you use as trigger objects don't need to be hooked up to other 
+portals or allow viewpoints into other rooms. In fact, you'll want to leave all 
+these properties empty in most cases, or you'll slow down the framerate trying 
+to reproduce the viewpoint. You're probably going to want an invisible portal in 
+most cases anyway. </P>
+<H4>Instructions for setting up a trigger portal</H4>
+<P CLASS="four">For this example, let's assume you've already created a Rectangle doorway 
+object that swings aside when triggered, and reveals a Portal to another room 
+behind it. The swinging motion can be accomplished with a Move action.</P>
+<OL class="four">
+  <LI>Navigate through the Hierarchy Tree until you're either in the 
+  Contents List or Environments Contents List of your Room. In most cases you 
+  should use Environment because the trigger portal will end up being invisible 
+  and won't affect draw order. 
+  <LI>From the Objects Library, click and drag a Portal to the Environment Contents of your Room (in the Hierarchy Tree). Assuming you're facing the 
+  door you want to trigger, pick the Portal that's 180 degrees opposite of your 
+  camera's viewpoint (e.g. if you're facing "West", choose an "East Portal".
+  <LI>Move the portal 
+  to the desired location, either by using the Properties Box buttons or by 
+  using the Transform property. 
+  <LI>In the Hierarchy Tree, click the triangle next to the Portal.
+  <LI>From the Behaviors Library, click and drag a <b>Bump Sensor </b>to the <b>Event Handlers</b> section listed beneath your Portal in the Hierarchy Tree. 
+
+  <LI>Click the triangle next to your newly added <b>BumpSensor</b>, and click on Targets.
+  
+  <LI>Click the Add button to the right of the Properties Box, and in the Add to Targets window find and select your door's MoveAction on the list. Click OK. 
+  <LI>Click your portal in the Hierarchy (or right-click the 
+  portal in the 3D window again). 
+  <LI>Double-click <b>Visible</b> in the Properties Box, and in the Edit box, set to 
+  No (False, or Invisible). 
+  <LI>Make sure you're in Drive mode, and try your new trigger out. </LI></OL>
+<P CLASS="four">Remember that if you want the door to close properly, you have to put a 
+portal coming the opposite direction or put a sequence together that closes the 
+door after a certain time. For a fully working door that opens and closes from 
+both sides, you'll need 2 pairs of portals, one on each side. One of the pair 
+controls a door's opening action, the other faces 180 degrees opposite in the 
+same spot and controls the door's separately defined closing action. If your 
+door has sound, you can use the same trigger portal to trigger the sound or a 
+sequence containing sounds. </P>
+
+<HR>
+
+<H3><A name=SameRoomS></A>SameRoom</H3>
+
+  <P CLASS="three">SameRoom will trigger the action as soon as <I>your avatar</I> walks into 
+  that room. It will trigger again if you walk out of the room and then back 
+  into it. This can be a problem if your SameRoom sensor is setting off 
+  something like a Sound or Animate action that are set to loop several times. 
+  Nevertheless, SameRoom is a pretty handy sensor.</P>
+
+ <HR>
+ 
+<H3><A name=DifferentRoomS></A>DifferentRoom</H3>
+
+  <P CLASS="three">DifferentRoom sends an event whenever your avatar is outside the room that 
+  the DifferentRoom sensor is in. Unfortunately, it will check back almost every 
+  frame to see if you're in a different room, and if you are in a different room 
+  that's still connected by portal to that room then it will send another 
+  DifferentRoom event every frame. Not only is this detrimental to performance, 
+  it's also not very useful. Ignore this sensor for now until we refine it, 
+  unless you can come up with some use we haven't thought of.</P>
+  <HR>
+  
+<H3><A name=StartupS></A>Startup</H3>
+
+  <P CLASS="three">Startup sends an event whenever the <TT>.world</TT> file is first loaded. 
+  Unlike the SameRoom sensor, this means it will trigger once and never again, 
+  until you quit the program entirely and reload. It's an ideal trigger for 
+  things that you will want to be infinitely looping anyways, for example if you 
+  have an animation of a fountain that you want to be running for the duration 
+  of a user's stay in the world.</P>
+
+  <HR>
+  
+  <H3><A name=ProximityS></A>Proximity</H3>
+
+  <P CLASS="three">Proximity sends an event whenever the user gets within a certain distance from the object. 
+ The Double Doorway and Animating Door objects have Proximity sensors attached to them that trigger the doors to open when a user gets a certain distance from them, and to close when a user walks away from them.  Unfortunately, their seem to be some problems when adding a Proximity sensor to any other object, and this sensor is under development.</P>
+
+  <HR>
+  
+  <H3><A name=Spin></A>
+  Spin</H3>
+
+  <P CLASS="three">Adding a Spin behavior to an object immediately sets the object to spinning (you don't need a sensor to trigger it). <B>NOTE:  If you decide to stop the spin, the object will stop wherever it is in the cycle, so it's very difficult if not impossible to return the object to its beginning position.</B> You can alter the <B>Cycle Time</B> (the higher the number, the slower the spin) and the <B>Axis</B> on which the object will spin.  If you change <B>Enabled</B> to false, the object will stop spinning wherever it is in the cycle.</P>
+
+  <HR>
+  
+  <H3><A name=PostSpin></A>
+  Post-Spin</H3>
+
+  <P CLASS="three">Adding a Post-Spin behavior to an object immediately sets the object to spinning (you don't need a sensor to trigger it). <B>NOTE:  If you decide to stop the spin, the object will stop wherever it is in the cycle, so it's very difficult if not impossible to return the object to its beginning position.</B> You can alter the <B>Cycle Time</B> (the higher the number, the slower the spin), the <B>Center</B>, and the <B>Axis</B> on which the object will spin.  If you change <B>Enabled</B> to false, the object will stop spinning wherever it is in the cycle.</P>
+
+  <HR>
+  
+  <H3><A name=Velocity></A>
+  Velocity</H3>
+
+  <P CLASS="three">Under development.</P>
+
+  <HR>
+  
+    <H3><A name=BuildStairs></A>
+  BuildStairs</H3>
+
+  <P CLASS="three">A BuildStairs behavior is a onetime behavior that you attach to a portal in order to build a set of stairs. Once the stairs are built, the BuildStairs behavior disappears.</P>
+
+<P CLASS="three"><B>NOTE</B>: There's currently a bug with BuildStairs that only allows you to build stairs in the UP direction (see Total Rise below).  Also, if you build the stairs too steep, or build the risers too high, when the stairs are built you won't be able to climb the stairs.</P>
+
+<H4>
+ <A NAME="TexturingtheStairs">Texturing the Stairs</A></H4>
+<P CLASS="four">You can specify textures for your stairs before they are even built.  The good thing about this is that you don't have to add textures to all the risers and treads individually once the stairs are built.  The bad thing is that you can't specify the tiling - the tiling is "built in".  You can change the tiling once the stairs are built, but you're still stuck changing each riser and tread individually.</P>
+
+<P CLASS="four">If you click on the triangle to the left of the BuildStairs behavior that you just added to a portal (under Event Handlers), you'll notice several Material listings: Ceiling, Door Post, Left Wall, Right Wall, Lintel, Riser, and Tread.  Add textures as you would for normal rects.  The stairs will be built with the textures you designated. Once the stairs are built (a stair "room" is added to the Rooms list), you'll be able to change any texture or tiling on the rects in that room.</P>
+
+<H4>Specific properties of BuildStairs</H4>
+<UL class="four">
+
+<LI><B>Build Now?</B><BR>Set this to true when all the other properties have been set, you've designated the textures (see above), and you want the stairs to be built.  Once you've set this to true and clicked OK, there's no going back! Your staircase will be built.
+<LI><B>Staircase Name</B><BR>The BuildStairs behavior actually builds a room that has a portal at each end and stairs in the middle.  The new staircase will be listed under Rooms in the Hierarchy Tree.  Give it a distinct name if you want to.
+ <LI><B>Number of Steps</B><BR>Specify the number of steps your staircase will have. The default is 10.
+<LI><B>Portal-to-Portal Distance</B><BR>Specify the distance from the bottom of the stairs  to the top of the stairs.  The default is 1000.
+<LI><B>Stairwell Width</B><BR> How wide do you want the stairwell.  If you specify a width that is greater than the width of the portals, BuildStairs will add walls on flanking the portals on either side.
+<LI><B>Portal Width</B><BR>Since BuildStairs creates a room, the room will have portals on either end of the stairs.  Specify a Width for the portals.  It should be the same width as the portal that has the BuildStairs behavior attached to it.
+<LI><B>Portal Height</B><BR>Specify a Height for the portals.  It should be the same width as the portal that has the BuildStairs behavior attached to it.
+<LI><B>Total Rise</B><BR>Specify the rise or "steepness" of the stairs.
+<LI><B>Lintel Height</B><BR>Specify the Lintel Height (the height of the rect above the bottom portal.  This will determine the height of the stairwell ceiling).
+ </UL>
+ 
+ 
+  <HR>
+
+ <H3><A name=BuildRamp></A>
+  BuildRamp</H3>
+
+  <P CLASS="three">The BuildRamp behavior is just like the BuildStairs behavior except you get a ramp instead of stairs.</P>
+
+<P CLASS="three"><B>NOTE</B>: There's currently a bug with BuildRamp (different than the BuildStairs bug).  Once the Ramp is built, you'll notice you can't get through the portal to get to the ramp.  You'll have to look for the new Ramp room that has been added to the Rooms in the Hierarchy Tree.  Go to the Ramp room's Environment Contents and look for the 2 Polygons listed there.  Click on each one individually and change their Bumpable property to false.  Now you can enter the Ramp room and go up (or down) the ramp.</P>
+
+<H4>Specific properties of BuildRamp</H4>
+<P CLASS="four">Most of the properties for BuildRamp are the same as BuildStairs (see above).  However with the BuildRamp, you are able to designate the tiling for the textures before the ramp gets built. If you want to add textures to the ramp prior to building it (see <A HREF="#TexturingtheStairs">Texturing the Stairs</A> above), you can specify <B>Ceiling Tile Size</B>, <B>Floor Tile Size</B>, <B>Right Wall Tile Size</B>, and <B>Left Wall Tile Size</B> in the BuildRamp properties.</P>
+
+<HR>
+  
+  <H3><A name=MoveandRoll></A>
+  Move & Roll</H3>
+
+  <P CLASS="three">Under development.</P>
+
+
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=AddingaTexture></A>Adding a Texture</H2>
+<P CLASS="two">Currently the Textures Library has just a few simple textures and is not generally used when building new worlds.</P>
+<P CLASS="two">To add an item from the Textures Library, follow these steps:</P>
+<OL CLASS="two">
+  <LI>Items in the Textures Library can be added to two places in the Hierarchy:
+<UL CLASS="two">  <LI>Rect Material Texture property (walls, floors and ceilings)
+  <LI>Portal Material Texture property (walls, floors and ceilings)
+</UL>
+  <LI>Click the Textures tab in the libraries section of WorldsShaper to see the catalog of Textures.
+<LI>In the library, click on the texture you want, holding down the mouse button, and drag it to the rect or portal that you want.  Release the mouse button.  The texture you selected is applied to the object.  The default tiling is 0,0 which stretches the texture once over the object.  To change the tile size, go the the Material Properties of the rect/portal and change Tile Size. 
+
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+
+
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=AttributesCatalog></A>Attributes Catalog</H2>
+<P CLASS="two">The shared state Attributes are currently under development, and shared state has been disabled. </P>
+<TABLE>
+<TR><TD>    <UL class="two">
+      <LI>String 
+
+      <LI>Number 
+
+      <LI>Visibility 
+
+      <LI>Transform 
+
+      <LI>Bumpable 
+	  
+	    <LI>Whiteboard 
+      </LI></UL></TD>
+	  
+	  <TD>    <UL class="two">
+      <LI>BizCard 
+
+      <LI>Rolling 
+
+      <LI>Color 
+
+      <LI>Billboard - Use the <a href="#AdBanner">Ad Banner</a> or <a href="#WebPage">Web Page</a> objects instead. 
+
+      <LI>Video Texture - Use the <a href="#VideoWall">Video Wall</a> object instead. 
+	  
+	 
+      </LI></UL></TD>
+	  
+	  </TR></TABLE>
+	  
+	 
+	  </TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A NAME="Mirrors">Creating Mirrors and Magnifying Mirrors</A></H2>
+
+<P CLASS="two">Mirrors are very easy to create, they are simply Portals that have been connected to themselves rather than to another Portal. To create a mirror, follow these steps:</P>
+
+<p CLASS="two"><OL class="two">
+<LI>Add a Portal at the location where you want the mirror.</LI>
+<LI>Resize it to the size you want the mirror.</LI>
+<LI>Under the Portal Properties, change Destination Room Name to the name of the room the mirror is in.</LI>
+<LI>Under the Portal Properties, change Destination Portal Name to the name of the portal itself.  The portal turns into a mirror.</LI>
+<LI>You'll notice, however, that the room and objects are not truly "mirrored".  Under Portal Properties, double-click <B>Mirrored</B> and select the "mirrored" option to designate this property as true. </LI>
+<LI>VERY IMPORTANT - if you leave the mirror as is, you can walk through the mirror with some very strange results - you'll end up walking on the ceiling of the next room, the right arrow key will make you turn left, the left arrow key will make you turn right,  and you won't be able to walk out of this upsidedown room! Assuming you don't want this effect, you'll need to do the following steps:</LI>
+<OL class="two">
+<LI>Make the portal unbumpable (make the Bumpable property = false).</LI>
+<LI>Place a rect of the same size directly over the portal.</LI>
+<LI>Either make the rect's Visible property = false, or add a "frame" by adding a texture to the rect that has transparency in the center.</LI>
+</OL>
+</OL>
+<p>NOTE:  It's not a good idea to put mirrors facing each other.  Although possible, it's not advised since this will slow your world down considerably due to the number of "reflections" WorldsPlayer will be forced to render.</p>
+
+</P>
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+  <H2><A name=CreatingWearWall></A>Creating a Wear Wall</H2>
+<P class="two">The interactive walls in the Gallery of Metamorphics contain a "Wear Wall" which allows small samples of avatar textures/heads/faces to be displayed for the user to choose from.  The following instructions are specifically for the walls in the Gallery of Metamorphics (use these for reference), but they can be adapted as far as size and placement.</P>
+
+<P class="two">
+These instructions are based on having the following 6 textures:<br>
+<P class="two">
+<table border="1" cellpadding="5">
+<tr><td><b>colors1.mov</b> - 128x128<br>
+This file contains six frames and is one of the textures used for the "title" above the Wear Wall.  The frames are:<br>
+head size<br>skin color<br>hair color<br>shirt color<br>coat color<br>dress color</td><td><img src="images/colors1.gif" width="128" height="128" border="0" alt=""></td><td><b>colors2.mov</b> - 128x128<br>This file contains five frames and is one of the textures used for the "title" above the Wear Wall.  The frames are:<br>
+pants color<br>left glove color<br>right glove color<br>left shoe color<br>right shoe color</td><td><img src="images/colors2.gif" width="128" height="128" border="0" alt=""></td></tr>
+
+<tr><td><b>faces.mov</b> - 128x128<br>This file contains six frames and is one of the textures used for the "title" above the Wear Wall.  The frames are:<br>
+male faces<br>female faces<br>animal faces<br>winged faces<br>surreal faces<br>cartoon faces</td><td><img src="images/faces.gif" width="128" height="128" border="0" alt=""></td><td><b>heads.mov</b> - 128x128<br>This file contains six frames and is one of the textures used for the "title" above the Wear Wall.  The frames are:<br>
+male heads<br>female heads<br>animal heads<br>winged heads<br>surreal heads<br>cartoon heads</td><td><img src="images/heads.gif" width="128" height="128" border="0" alt=""></td></tr>
+
+<tr><td><b>vancat5t.mov</b> - 256x256<br>This is a "hi-res" texture that is actually broken down into four frames that are 128x128 each.  This texture contains the top buttons to the left of the Wear Wall.</td><td><img src="images/vancat5t.gif" width="128" height="128" border="0" alt=""></td><td><b>vancat5b.mov</b> - 256x256<br><br>This is a "hi-res" texture that is actually broken down into four frames that are 128x128 each.  This texture contains the bottom buttons to the left of the Wear Wall.</td><td><img src="images/vancat5b.gif" width="128" height="128" border="0" alt=""></td></tr>
+</table>
+</P>
+<br><br>
+<ol class="two">
+
+<li>From the Objects Library, add a Wear Wall to your room.  Make it 125w x 250h, and set its Color to 255,252,235 (under Material Properties). NOTE: a Wear Wall can be any size.  The size of the textures (or heads or faces) that display on the wall will depend on 1.) the size of the Wear Wall and 2.) the number of textures/heads/faces that have to fit on the wall.</li>
+<li>Add a <b>SetString Action</b> to the Wear Wall.  Name it SetStringAction1.</li>
+<li>For the titles above the Wear Wall, create a rect above the Wear Wall that is 125w x 25h.  Set the tiling on this rect to 0,125 and the tile origin to 0,-25.</li>
+<li>Add an <b>Animate Action</b> to this top rect, naming it AnimateAction1.  Set the AnimateAction's Cycle Time to 0, and its Cycles to 1.</li>
+<li>Add 3 rects to the left of the Wear Wall, one at the top that is 125x125, another 125x125 rect below that, and a 125x25 rect on the bottom (make the color of this bottom one 160,181,255).</li>
+<li>Add the vancat5t.mov texture to the top rect on the left.</li>
+<li>Add the vancat5b.mov texture to the middle rect on the left.</li>
+<li>Add a <b>WearAction</b> to the top rect, naming it WearAction1.  Set the WearAction's Limb to Q.</li>
+<li>Add a <b>ClickSensor</b> to the top rect (vancat5t), and in its targets add WearAction1, SetStringAction1, and AnimateAction1.  Set the ClickSensor's config file to "Top.clk", and store the Top.clk file in the same directory as your .world file (see below for more info on .clk files).</li>
+<li>Add a <b>ClickSensor</b> to the middle rect (vancat5b) and in its targets add SetStringAction1 and AnimateAction1.  Set the ClickSensor's config file to "Bottom.clk" and store the Bottom.clk file (see below) in the same directory as your .world file.</li>
+</ol>
+<H3>.CLK Files</H3>
+<P class="three">Within your WorldsShaper directory, look in the AvatarGallery folder (if you have that world installed) to see the Top.clk and Bottom.clk files.  Open them in Notepad and you'll see that there are a list of coordinates for each of the "buttons" on the textures to the left of the Wear Wall.  Each button has textures, colors, or heads assigned to it, and each button calls up a different "title" above the Wear Wall (see the Frame List within the .clk files). Below is a more detailed description of each line.</P>
+
+<p class="three">
+We'll use Top.clk from the AvatarGallery folder for reference:<br><br>
+
+<tt>43 256 256</tt><br><b>Line1:</b> The top three numbers in the file are the number of lines in the file (43) and the size of the texture this file references (256 256).  Top.clk references vancat5t.mov
+<br><br>
+
+
+Each button on vancat5t.mov uses three lines in the .clk file: <br><br>
+<tt>103 202 65 21 SetString "Property Name" Limb "Set To" H</tt><br>
+<b>Line 2:</b> The four numbers represent the coordinates of the button on vancat5t. The lower left corner of the vancat5t texture is 0,0, and <tt>103 202</tt> is the x,y coordinate of the lower left corner of the "Male Heads" button. <tt>Limb "Set To" H</tt> tells the program that the head (H) texture will change if this button is clicked.<br><br>
+<tt>103 202 65 21 SetString "Property Name" "Tile List" "Set To" "axel cassius charlie ..."</tt><br>
+<b>Line 3:</b> Here you list the <tt>"Tile List"</tt>, that is, the textures you want to display when a user clicks on this button.  In this instance the list of textures contains <tt> axel cassius charlie dude guru</tt> etc. which tells the Wear Wall to display these "head" files when a user clicks on the "Male Heads" button.<br><br>
+<tt>103 202 65 21 Animate "Frame List" heads1s*.mov</tt><br>
+<b>Line 4: </b> This line tells the program which title to display above the Wear Wall (colors1, colors2, head, or faces.mov).  In this instance, <tt>heads1s*.mov</tt> is listed, which means "display the first frame of the heads.mov file".  If you want a different frame to display, replace the <tt>1</tt> within <tt>heads1s*.mov</tt> with whatever frame number you desire.<br><br>
+<b>Lines 5,6,7:</b> These next three lines are for the Male Faces button.  You'll notice that the coordinates change, as do the <tt>Limb</tt> (E for "face"), and the list of frames (<tt>ztx cassius charlie dude</tt> etc.)<br><br>
+<tt>12 20 23 31 Wear Value qqq</tt><br>
+<b>Line 37:</b> At the bottom of this .clk file, you'll notice that the last 7 lines are different than the others.  These refer to the "Head Size" buttons at the bottom of vancat5t.mov.  The first four numbers are again the coordinates of that particular head size button.  Then the <tt>Wear Value</tt> of <tt>qqq</tt> tells the program to shrink the avatar's head to that size.  <tt>000</tt> is the "normal" head size (see Line 40).
+
+
+
+</p>
+
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+  <H2><A name=MultiUser></A>Making Your World Multiuser</H2>
+ <P CLASS="two"> You most likely will want to make your world Multiuser so that people can see each other when they're online in your world. To make your world multiuser, follow these steps:</P>
+  <OL CLASS="two">
+  <LI>Scroll up to the very top of the Hierarchy Tree for your world.
+<LI>Click on the world name at the top to bring up the <B>World Properties</B> in the Properties Box.
+ <LI>Double-click <B>Multiuser</B> under World Properties.
+ <LI>Select "yes" in the Edit Multiuser box and click OK.
+ <LI>Save your world.</OL>
+
+</TD></TR></TABLE>
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A><HR SIZE="1"></P>
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="650">
+<TR><TD>
+<H2><A name=distribution></A>How to Register Your World</H2>
+
+<ol>
+<li>Ensure you have enough web space available to you (through your ISP) to hold all of the files associated with your world.  
+ 
+<li>Verify the links to textures and shapes.  Serving your new world is very much like serving a web page.  Your .world file is like the html file that points to various images, except it
+instead points to 3D textures and shapes.  As with an html file, you should go back and make sure you aren't linking to objects directly on your hard drive. Within your world, all of the URL's to textures and objects should begin with the "rel:" prefix (in most cases this is added to the URL for you by WorldsShaper).  For example:<br><br>
+
+CORRECT texture URL:  <br><br><tt>rel:file:c:/WorldsShaper/MyWorld/textures/grass.gif</tt><br><br>
+INCORRECT texture URL:  <br><br><tt>file:c:/WorldsShaper/MyWorld/textures/grass.gif</tt><br><br>
+
+ This is the same as absolute and relative URL's on a web page and carries the same problems... if your links point directly to your hard drive instead of a relative path from the .world file, your world won't work for anybody but you.
+
+<li>Verify the proper case on all uploaded
+files. The filenames of any images or shapes in your world will become
+case-sensitive when uploaded to a server.  
+ 
+<li>Ensure that you haven't compressed any resources into content.zip files.  While this will work locally on your machine, WorldsPlayer
+can't decompress ZIP files on web servers.  If you don't know what that means, pretend step 4 didn't exist.
+ 
+<li>FTP all of the files associated with your world to your web space.  Be sure to preserve whatever directory structure your world had.  For example, if your .world file is within your WorldsShaper directory on your hard drive, like this:
+<br><br>
+<img src="images/dir.gif" width="129" height="67" border="0" alt=""><br><br>
+
+then keep that same file structure when you upload all of your files.
+
+<li>Determine the URL to your .world file; this will be used in a creating a WorldsMark to your world and telling other users how to access
+your world.  Again, it's just like an html file.  For example:<br><br>
+<tt>http://www.myisp.net/JoesAccount/MyWorld/Joes.world</tt><br><br>
+
+
+<li>Create a WorldsMark for your new world by clicking on <b>WorldsMark</b> on the WorldsPlayer interface.  Choose <b>Add new WorldsMark...</b>. In the Add WorldsMark box, type in the name of your world, and in the URL section put your world's URL:<br><br>
+
+<tt>http://www.myisp.net/JoesAccount/MyWorld/Joes.world</tt><br><br>
+
+Then click <b>Add...</b>.<br><br>
+
+<li><b>IMPORTANT NOTE: You must be off-line in Worlds (not signed in) to do this step. Once your world has been registered, you will be able to access it while signed-in.</b><br><br> Click on WorldsMark again, and use the WorldsMark you just created to teleport to your world. You should see your world form around you as its resources are downloaded, starting in the room
+your avatar is in.  Any textures or shapes that don't come in may be absolute links to your hard drive... go back and check for that.
+
+<li>Register your world by going to <a href="http://dev.worlds.net/cgi-bin/shaper/submit_world.pl">http://dev.worlds.net/cgi-bin/shaper/submit_world.pl</a>.  Fill out the form, including your WorldShaper account number.  At the bottom of the form, you can choose to have your world published on our User Created Worlds page, or you can have your world be unpublished (your world will still be registered, it just won't be published on our web page).  Click on the Submit button.  It will take a few days for the authorization process, and Worlds will let you know via email when your world has been registered.  
+ 
+<li>Give the URL for your world to all your friends, and tell them to make a WorldsMark with it! <b>NOTE: The URL to your world will not work for others until it has been registered with Worlds, unless they wish to view your world while off-line.</b>
+ </ol>
+
+</TD></TR></TABLE>
+	  
+	  
+
+<P><A HREF="#Top"><IMG SRC="images/top_of_page.gif" WIDTH=20 HEIGHT=20 BORDER=0 ALT="Top of Page" ALIGN="MIDDLE"></A>
+
+<hr>
+
+  <footer>
+  <p>Total derechos a Worlds Inc., Worlds.com y ArchiveWorlds</p>
+  <p><a href="../../index.html">Volver al Inicio</a></p>
+  </footer>
+
+</body>
+</html>
+
+
+</BODY>
+
+</HTML>

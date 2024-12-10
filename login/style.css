@@ -1,0 +1,32 @@
+* {
+    background-color: black;
+    color: green;
+}
+
+input {
+    display: block;
+    width: 180px;
+    padding: 2px;
+    text-align: center;
+    width: 100%;
+}
+
+#formulario {
+    border: solid 3px green;
+    width: 210px;
+    padding: 150px;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+}
+
+button {
+    border: solid 1px #525151;
+    padding: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+}
+
+button:hover {
+    background: #525151;
+}
